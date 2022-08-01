@@ -1,4 +1,5 @@
 $primary: #A05F9A;
+$light: #F2D7F7;
 
 $btn-font-weight: 600;
 
@@ -8,3 +9,7 @@ $nav-link-font-weight: 600;
 /* Custom */
 $bg-color-primary: #F2D7F7;
 $bg-color-secondary: #F7ECF9;
+
+$mt-colors: (
+  "ultralight": lighten($light, 3%)
+);
