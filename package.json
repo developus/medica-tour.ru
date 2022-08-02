@@ -20,12 +20,14 @@
     "autoprefixer": "^10.4.8",
     "browser-sync": "^2.27.10",
     "gulp": "^4.0.2",
+    "gulp-faker": "^1.0.1",
+    "gulp-html": "^4.0.0",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^9.0.1",
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
-    "sass": "^1.54.0",
-    "postcss": "^8.4.14"
+    "postcss": "^8.4.14",
+    "sass": "^1.54.0"
   },
   "dependencies": {
     "bootstrap": "^5.2.0"
