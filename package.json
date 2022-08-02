@@ -22,6 +22,7 @@
     "gulp": "^4.0.2",
     "gulp-faker": "^1.0.1",
     "gulp-html": "^4.0.0",
+    "gulp-livereload": "^4.0.2",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^9.0.1",
     "gulp-sass": "^5.1.0",

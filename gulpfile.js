@@ -34,7 +34,6 @@ const server = (done) => {
 }
 exports.server = server;
 
-
 const watcher = () => {
   gulp.watch('src/sass/**/*.+(scss|sass)', gulp.series('styles'));
   gulp.watch('src/**/*.html').on('change', sync.reload);
