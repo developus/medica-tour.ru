@@ -8,7 +8,7 @@
 </head>
 <body>
 <header>
-  <nav class="navbar navbar-expand-lg bg-light">
+  <nav class="navbar navbar-expand-lg bg-white">
     <div class="container">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -36,7 +36,7 @@
       </div>
     </div>
   </nav>
-  <div class="my-5">
+  <div class="py-5" style="background: url('img/city.jpg') no-repeat center; background-size: cover">
     <div class="container">
       <div class="input-group">
         <input type="search" class="form-control" placeholder="Заболевание, процедура, клиника или доктор"
@@ -48,7 +48,7 @@
 </header>
 <main class="bg-light">
   <div class="container py-4">
-    <div class="card border-0 bg-white shadow-sm px-3 py-2">
+    <div class="card border-0 bg-white shadow px-3 py-2 mb-3">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb mb-2">
           <li class="breadcrumb-item"><a class="text-black text-decoration-none" href="/">Главная</a></li>
@@ -57,34 +57,58 @@
       </nav>
       <h1 class="mb-0">77 клиник Москвы</h1>
     </div>
+
+    <div class="card border-0 shadow mb-3">
+      <button type="button" class="btn d-block" data-bs-toggle="filterButton" data-bs-target="#filterModal">
+        Фильтр
+      </button>
+    </div>
+
+    <div class="modal fade" id="filterModal" tabindex="-1" aria-labelledby="filterModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="filterModalLabel">Заголовок модального окна</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+            <button type="button" class="btn btn-primary">Сохранить изменения</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </main>
-<footer>
+<footer class="py-4">
   <div class="container">
-    <ul class="nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Болезни</a>
+    <ul class="row list-unstyled">
+      <li class="col-auto">
+        <a class="link-dark" href="#">Болезни</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Клиники</a>
+      <li class="col-auto">
+        <a class="link-dark" href="#">Клиники</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Новости</a>
+      <li class="col-auto">
+        <a class="link-dark" href="#">Новости</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">О компании</a>
+      <li class="col-auto">
+        <a class="link-dark" href="#">О компании</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Процедуры</a>
+      <li class="col-auto">
+        <a class="link-dark" href="#">Процедуры</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Страны</a>
+      <li class="col-auto">
+        <a class="link-dark" href="#">Страны</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Контакты</a>
+      <li class="col-auto">
+        <a class="link-dark" href="#">Контакты</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Отзывы</a>
+      <li class="col-auto">
+        <a class="link-dark" href="#">Отзывы</a>
       </li>
     </ul>
     <p>
@@ -112,5 +136,23 @@
   </div>
 </footer>
 <script src="js/bootstrap.bundle.min.js"></script>
+<script>
+  const filterModal = document.getElementById('filterModal')
+  filterModal.addEventListener('show.bs.modal', event => {
+    // Кнопка, которая активировала модальное окно
+    const button = event.relatedTarget
+    // Извлекает информацию из атрибутов data-bs-*
+    const recipient = button.getAttribute('data-bs-whatever')
+    // При необходимости вы можете инициировать запрос AJAX здесь,
+    // а затем выполнить обновление в обратном вызове.
+    //
+    // Обновляет содержимое модального окна.
+    const modalTitle = filterModal.querySelector('.modal-title')
+    const modalBodyInput = filterModal.querySelector('.modal-body input')
+
+    modalTitle.textContent = `New message to ${recipient}`
+    modalBodyInput.value = recipient
+  })
+</script>
 </body>
 </html>
