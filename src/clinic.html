@@ -52,51 +52,13 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb mb-2">
           <li class="breadcrumb-item"><a class="text-black" href="/">Главная</a></li>
+          <li class="breadcrumb-item">Россия</li>
+          <li class="breadcrumb-item">Москва</li>
           <li class="breadcrumb-item active" aria-current="page">Клиники</li>
         </ol>
       </nav>
-      <h1 class="mb-0">77 клиник Москвы</h1>
+      <h1 class="mb-0">National Medical Research Center named after V. A. Almazov</h1>
     </div>
-
-    <div class="card border-0 shadow mb-3">
-      <button type="button" class="btn d-block" data-bs-toggle="filterButton" data-bs-target="#filterModal">
-        Фильтр
-      </button>
-    </div>
-
-    <div class="modal fade" id="filterModal" tabindex="-1" aria-labelledby="filterModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="filterModalLabel">Заголовок модального окна</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-          </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-            <button type="button" class="btn btn-primary">Сохранить изменения</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <nav aria-label="Страницы клиник">
-      <ul class="pagination justify-content-center">
-        <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item"><a class="page-link" href="#">4</a></li>
-        <li class="page-item"><a class="page-link" href="#">5</a></li>
-        <li class="page-item">
-          <a class="page-link" href="#" aria-label="Следующая страница">
-            <span aria-hidden="true">&raquo;</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-
   </div>
 </main>
 <footer class="py-4">
@@ -152,23 +114,5 @@
   </div>
 </footer>
 <script src="js/bootstrap.bundle.min.js"></script>
-<script>
-  const filterModal = document.getElementById('filterModal')
-  filterModal.addEventListener('show.bs.modal', event => {
-    // Кнопка, которая активировала модальное окно
-    const button = event.relatedTarget
-    // Извлекает информацию из атрибутов data-bs-*
-    const recipient = button.getAttribute('data-bs-whatever')
-    // При необходимости вы можете инициировать запрос AJAX здесь,
-    // а затем выполнить обновление в обратном вызове.
-    //
-    // Обновляет содержимое модального окна.
-    const modalTitle = filterModal.querySelector('.modal-title')
-    const modalBodyInput = filterModal.querySelector('.modal-body input')
-
-    modalTitle.textContent = `New message to ${recipient}`
-    modalBodyInput.value = recipient
-  })
-</script>
 </body>
 </html>
