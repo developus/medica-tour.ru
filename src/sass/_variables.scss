@@ -1,13 +1,14 @@
 $font-family-sans-serif:  Roboto, sans-serif, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-size-root: 14px;
+
 $enable-negative-margins: true;
 
 $primary: #A05F9A;
-$mt-light: #F2D7F7;
 
 $btn-font-weight: 600;
-$font-size-root: 14px;
 
 $navbar-light-color: #000000;
+
 $nav-link-font-weight: 600;
 
 $navbar-toggler-padding-x: 0;
@@ -18,10 +19,10 @@ $navbar-light-toggler-icon-bg: url("../img/toggler-icon.svg");
 $breadcrumb-active-color: $primary;
 $breadcrumb-item-padding-x: 0.3rem;
 
-/* Custom */
-$bg-color-primary: #F2D7F7;
-$bg-color-secondary: #F7ECF9;
+$pagination-color: #000000;
 
+/* Custom */
+$mt-light: #F2D7F7;
 $mt-colors: (
   "mt-light": $mt-light,
   "mt-ultralight": lighten($mt-light, 3%),
