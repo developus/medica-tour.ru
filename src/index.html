@@ -96,7 +96,7 @@
       </div>
     </div>
   </div>
-  <section class="py-4">
+  <section class="bg-mt-light py-4">
     <div class="container">
       <div class="card border-0 shadow mb-3">
         <div class="card-body">
@@ -189,14 +189,36 @@
   <section class="bg-mt-ultralight py-4">
     <div class="container">
       <h2>Клиники</h2>
-      <div id="carouselClinics" class="carousel slide px-3" data-bs-ride="carousel">
+      <div id="carouselClinics" class="carousel slide overflow-hidden px-3 mx-n1" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active p-4">
             <article class="card border-0 shadow">
               <img src="img/clinic-image.jpg" alt="Клиника National Medical Research Center named after V.A.Almazov"
                    class="card-img-top">
               <div class="card-body">
-                <div class="reviews row align-items-center">
+                <div class="reviews row align-items-center mb-3">
+                  <div class="rating col-auto">
+                    <div class="row gx-1">
+                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      <div class="col"><img src="img/star.svg" class="align-top" alt=""></div>
+                    </div>
+                  </div>
+                  <div class="col comments text-black-50">10 отзывов</div>
+                </div>
+                <div class="location">Россия, Санкт-Петербург</div>
+                <h3 class="card-title fs-5 fw-bold">National Medical Research Center named after V.A.Almazov</h3>
+              </div>
+            </article>
+          </div>
+          <div class="carousel-item active p-4">
+            <article class="card border-0 shadow">
+              <img src="img/clinic-image.jpg" alt="Клиника National Medical Research Center named after V.A.Almazov"
+                   class="card-img-top">
+              <div class="card-body">
+                <div class="reviews row align-items-center mb-3">
                   <div class="rating col-auto">
                     <div class="row gx-1">
                       <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
@@ -214,12 +236,12 @@
             </article>
           </div>
         </div>
-        <button class="carousel-control-prev ms-n5" type="button" data-bs-target="#carouselClinics"
+        <button class="carousel-control-prev ms-n3" type="button" data-bs-target="#carouselClinics"
                 data-bs-slide="prev">
           <img src="img/arrow-left.svg" alt="Назад">
           <span class="visually-hidden">Назад</span>
         </button>
-        <button class="carousel-control-next me-n5" type="button" data-bs-target="#carouselClinics"
+        <button class="carousel-control-next me-n3" type="button" data-bs-target="#carouselClinics"
                 data-bs-slide="next">
           <img src="img/arrow-right.svg" alt="Вперед">
           <span class="visually-hidden">Вперед</span>
@@ -230,33 +252,32 @@
       </div>
     </div>
   </section>
-  <section class="py-4">
+  <section class="bg-mt-light py-4">
     <div class="container">
       <h2>Новости</h2>
       <div class="card border-0 shadow mb-3">
-        <div class="row g-0">
-          <div class="col-4">
-            <img src="img/news_1.jpg" class="img-fluid rounded-start"
-                 alt="Мультидисциплинарная конференция «СМ-клиники» по бариатрической хирургии">
+        <div class="d-flex align-items-center">
+          <div class="col-auto p-3">
+            <a href="#"><img src="img/news_1.jpg" class="img-fluid rounded-start" alt="Мультидисциплинарная конференция «СМ-клиники» по бариатрической хирургии"></a>
           </div>
-          <div class="col-8">
+          <div class="col">
             <div class="card-body">
-              <h3 class="h5 card-title">Мультидисциплинарная конференция «СМ-клиники» по бариатрической хирургии</h3>
+              <h3 class="card-title fs-6 fw-bold m-0"><a href="#" class="link-dark">Мультидисциплинарная конференция «СМ-клиники» по бариатрической хирургии</a></h3>
             </div>
           </div>
         </div>
       </div>
       <div class="text-center mt-3">
-        <a href="#" class="btn btn-primary d-block">Все новости</a>
+        <a href="#" class="btn btn-primary">Все новости</a>
       </div>
     </div>
   </section>
   <section class="bg-mt-ultralight py-4">
     <div class="container">
       <h2>Последние отзывы</h2>
-      <div id="carouselReviews" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselReviews" class="carousel slide overflow-hidden px-3 mx-n1" data-bs-ride="carousel">
         <div class="carousel-inner py-1">
-          <div class="carousel-item active px-3">
+          <div class="carousel-item active p-4">
             <div class="card border-0 shadow">
               <div class="card-body">
                 <h3 class="card-title">Ольга</h3>
@@ -271,12 +292,24 @@
                   И
                   всё это бесплатно для меня! Я была потрясена!
                 </p>
-                <a href="#" class="card-link">National Medical Research Center named after V.A.Almazov</a>
-                <p class="text-muted">Россия, Санкт-Петербург</p>
+                <a href="#" class="card-link text-decoration-underline">National Medical Research Center named after V.A.Almazov</a>
+                <div class="location text-muted">Россия, Санкт-Петербург</div>
+                <div class="reviews row align-items-center">
+                  <div class="rating col-auto">
+                    <div class="row gx-1">
+                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
-          <div class="carousel-item px-3">
+          <div class="carousel-item p-4">
             <div class="card border-0 shadow">
               <div class="card-body">
                 <h3 class="card-title">Ольга</h3>
@@ -291,12 +324,23 @@
                   И
                   всё это бесплатно для меня! Я была потрясена!
                 </p>
-                <a href="#" class="card-link">National Medical Research Center named after V.A.Almazov</a>
-                <p class="text-muted">Россия, Санкт-Петербург</p>
+                <a href="#" class="card-link text-decoration-underline">National Medical Research Center named after V.A.Almazov</a>
+                <div class="location text-muted">Россия, Санкт-Петербург</div>
+                <div class="reviews row align-items-center">
+                  <div class="rating col-auto">
+                    <div class="row gx-1">
+                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="carousel-item px-3">
+          <div class="carousel-item p-4">
             <div class="card border-0 shadow">
               <div class="card-body">
                 <h3 class="card-title">Ольга</h3>
@@ -311,25 +355,36 @@
                   И
                   всё это бесплатно для меня! Я была потрясена!
                 </p>
-                <a href="#" class="card-link">National Medical Research Center named after V.A.Almazov</a>
-                <p class="text-muted">Россия, Санкт-Петербург</p>
+                <a href="#" class="card-link text-decoration-underline">National Medical Research Center named after V.A.Almazov</a>
+                <div class="location text-muted">Россия, Санкт-Петербург</div>
+                <div class="reviews row align-items-center">
+                  <div class="rating col-auto">
+                    <div class="row gx-1">
+                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselReviews"
+        <button class="carousel-control-prev ms-n3" type="button" data-bs-target="#carouselReviews"
                 data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <img src="img/arrow-left.svg" alt="Назад">
           <span class="visually-hidden">Назад</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselReviews"
+        <button class="carousel-control-next me-n3" type="button" data-bs-target="#carouselReviews"
                 data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <img src="img/arrow-right.svg" alt="Вперед">
           <span class="visually-hidden">Вперед</span>
         </button>
       </div>
       <div class="text-center mt-3">
-        <a href="#" class="btn btn-primary d-block">Все отзывы</a>
+        <a href="#" class="btn btn-primary">Все отзывы</a>
       </div>
     </div>
   </section>
