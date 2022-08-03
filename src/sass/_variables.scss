@@ -1,7 +1,8 @@
 $font-family-sans-serif:  Roboto, sans-serif, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$enable-negative-margins: true;
 
 $primary: #A05F9A;
-$light: #F2D7F7;
+$mt-light: #F2D7F7;
 
 $btn-font-weight: 600;
 $font-size-root: 14px;
@@ -22,5 +23,6 @@ $bg-color-primary: #F2D7F7;
 $bg-color-secondary: #F7ECF9;
 
 $mt-colors: (
-  "ultralight": lighten($light, 3%)
+  "mt-light": $mt-light,
+  "mt-ultralight": lighten($mt-light, 3%),
 );

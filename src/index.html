@@ -46,8 +46,8 @@
     </div>
   </div>
 </header>
-<main class="bg-light">
-  <div class="bg-ultralight py-3">
+<main class="bg-mt-ultralight">
+  <div class="bg-mt-ultralight py-3">
     <div class="container">
       <div class="row row-cols-2 gx-4">
         <div class="col">
@@ -100,8 +100,7 @@
     <div class="container">
       <div class="card border-0 shadow mb-3">
         <div class="card-body">
-            <h3 class="card-title border-bottom pb-2">Страны</h3>
-            <span class="badge rounded-pill bg-primary">6546</span>
+            <h3 class="card-title border-bottom pb-2 d-flex">Страны <span class="ms-auto badge rounded-pill bg-primary">6546</span></h3>
           <ul class="list-group list-group-flush mt-2 mb-2">
             <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0">
               <a href="#">Россия</a>
@@ -129,7 +128,7 @@
       </div>
       <div class="card border-0 shadow mb-3">
         <div class="card-body">
-          <h3 class="card-title border-bottom pb-2">Заболевания</h3>
+          <h3 class="card-title border-bottom pb-2 d-flex">Заболевания <span class="ms-auto badge rounded-pill bg-primary">6546</span></h3>
           <ul class="list-group list-group-flush mt-2 mb-2">
             <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0">
               <a href="#">Аллергология</a>
@@ -157,7 +156,7 @@
       </div>
       <div class="card border-0 shadow">
         <div class="card-body">
-          <h3 class="card-title border-bottom pb-2">Процедуры</h3>
+          <h3 class="card-title border-bottom pb-2 d-flex">Процедуры <span class="ms-auto badge rounded-pill bg-primary">6546</span></h3>
           <ul class="list-group list-group-flush mt-2 mb-2">
             <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0">
               <a href="#">ЭКО</a>
@@ -187,52 +186,47 @@
       </div>
     </div>
   </section>
-  <section class="bg-ultralight py-4">
+  <section class="bg-mt-ultralight py-4">
     <div class="container">
       <h2>Клиники</h2>
-      <div id="carouselClinics" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselClinics" class="carousel slide px-3" data-bs-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item active p-4">
             <article class="card border-0 shadow">
               <img src="img/clinic-image.jpg" alt="Клиника National Medical Research Center named after V.A.Almazov"
                    class="card-img-top">
               <div class="card-body">
-                <h3 class="card-title">National Medical Research Center named after V.A.Almazov</h3>
-              </div>
-            </article>
-          </div>
-          <div class="carousel-item">
-            <article class="card border-0 shadow">
-              <img src="img/clinic-image.jpg" alt="Клиника National Medical Research Center named after V.A.Almazov"
-                   class="card-img-top">
-              <div class="card-body">
-                <h3 class="card-title">National Medical Research Center named after V.A.Almazov</h3>
-              </div>
-            </article>
-          </div>
-          <div class="carousel-item">
-            <article class="card border-0 shadow">
-              <img src="img/clinic-image.jpg" alt="Клиника National Medical Research Center named after V.A.Almazov"
-                   class="card-img-top">
-              <div class="card-body">
-                <h3 class="card-title">National Medical Research Center named after V.A.Almazov</h3>
+                <div class="reviews row align-items-center">
+                  <div class="rating col-auto">
+                    <div class="row gx-1">
+                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      <div class="col"><img src="img/star.svg" class="align-top" alt=""></div>
+                    </div>
+                  </div>
+                  <div class="col comments text-black-50">10 отзывов</div>
+                </div>
+                <div class="location">Россия, Санкт-Петербург</div>
+                <h3 class="card-title fs-5 fw-bold">National Medical Research Center named after V.A.Almazov</h3>
               </div>
             </article>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselClinics"
+        <button class="carousel-control-prev ms-n5" type="button" data-bs-target="#carouselClinics"
                 data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <img src="img/arrow-left.svg" alt="Назад">
           <span class="visually-hidden">Назад</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselClinics"
+        <button class="carousel-control-next me-n5" type="button" data-bs-target="#carouselClinics"
                 data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <img src="img/arrow-right.svg" alt="Вперед">
           <span class="visually-hidden">Вперед</span>
         </button>
       </div>
       <div class="text-center mt-3">
-        <a href="#" class="btn btn-primary d-block">Все клиники</a>
+        <a href="#" class="btn btn-primary">Все клиники</a>
       </div>
     </div>
   </section>
@@ -257,7 +251,7 @@
       </div>
     </div>
   </section>
-  <section class="bg-ultralight py-4">
+  <section class="bg-mt-ultralight py-4">
     <div class="container">
       <h2>Последние отзывы</h2>
       <div id="carouselReviews" class="carousel slide" data-bs-ride="carousel">
