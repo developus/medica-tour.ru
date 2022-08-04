@@ -9,3 +9,37 @@ a {
 .search .form-control {
   border-color: #ffffff;
 }
+
+.user-link {
+  position: relative;
+  padding-left: 1.5rem;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 16px;
+    height: 16px;
+    background: url("../img/user-icon.svg") no-repeat center center;
+  }
+}
+
+.register-link {
+  position: relative;
+  padding-left: 1rem;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 1px;
+    height: 15px;
+    background: #ffffff;
+  }
+}
