@@ -24,7 +24,9 @@ $pagination-border-color: #ffffff;
 
 /* Custom */
 $mt-light: #F2D7F7;
+$mt-dark: #624E60;
 $mt-colors: (
   "mt-light": $mt-light,
   "mt-ultralight": lighten($mt-light, 3%),
+  "mt-dark": $mt-dark,
 );
