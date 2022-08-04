@@ -195,11 +195,19 @@
     <div class="container">
       <h2>Клиники</h2>
 
-      <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+      <div class="splide px-4" role="group" data-splide='{"type":"loop","perPage":4, "easing": "ease","width": "100%", "padding": 0, "pagination": false, "breakpoints": { "500": { "perPage": 1 },"800": { "perPage": 2 },"1024": { "perPage": 3 }}}' aria-label="Клиники">
+        <div class="splide__arrows">
+          <button class="bg-transparent ms-n3 splide__arrow splide__arrow--prev">
+            <img src="img/arrow-left.svg" alt="Назад">
+          </button>
+          <button class="bg-transparent me-n3 splide__arrow splide__arrow--next">
+            <img src="img/arrow-right.svg" alt="Вперед">
+          </button>
+        </div>
         <div class="splide__track">
           <ul class="splide__list">
-            <li class="splide__slide">
-              <article class="card border-0 shadow">
+            <li class="splide__slide px-3 py-4">
+              <article class="card border-0 h-100 shadow">
                 <img src="img/clinic-image.jpg" alt="Клиника National Medical Research Center named after V.A.Almazov"
                      class="card-img-top">
                 <div class="card-body">
@@ -223,7 +231,9 @@
                   </h3>
                 </div>
               </article>
-              <article class="card border-0 shadow">
+            </li>
+            <li class="splide__slide px-3 py-4">
+              <article class="card border-0 h-100 shadow">
                 <img src="img/clinic-image.jpg" alt="Клиника National Medical Research Center named after V.A.Almazov"
                      class="card-img-top">
                 <div class="card-body">
@@ -252,72 +262,6 @@
         </div>
       </div>
 
-      <div id="carouselClinics" class="carousel slide overflow-hidden px-3 mx-n1" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active p-4">
-            <article class="card border-0 shadow">
-              <img src="img/clinic-image.jpg" alt="Клиника National Medical Research Center named after V.A.Almazov"
-                   class="card-img-top">
-              <div class="card-body">
-                <div class="reviews row align-items-center mb-3">
-                  <div class="rating col-auto">
-                    <div class="row gx-1">
-                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                      <div class="col"><img src="img/star.svg" class="align-top" alt=""></div>
-                    </div>
-                  </div>
-                  <div class="col comments text-black-50">10 отзывов</div>
-                </div>
-                <div class="location">Россия, Санкт-Петербург</div>
-                <h3 class="card-title fs-5 fw-bold">
-                  <a class="text-black" href="clinic.html">
-                    National Medical Research Center named after V.A.Almazov
-                  </a>
-                </h3>
-              </div>
-            </article>
-          </div>
-          <div class="carousel-item active p-4">
-            <article class="card border-0 shadow">
-              <img src="img/clinic-image.jpg" alt="Клиника National Medical Research Center named after V.A.Almazov"
-                   class="card-img-top">
-              <div class="card-body">
-                <div class="reviews row align-items-center mb-3">
-                  <div class="rating col-auto">
-                    <div class="row gx-1">
-                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                      <div class="col"><img src="img/star.svg" class="align-top" alt=""></div>
-                    </div>
-                  </div>
-                  <div class="col comments text-black-50">10 отзывов</div>
-                </div>
-                <div class="location">Россия, Санкт-Петербург</div>
-                <h3 class="card-title fs-5 fw-bold">
-                  <a class="text-black" href="clinic.html">
-                    National Medical Research Center named after V.A.Almazov
-                  </a>
-                </h3>
-              </div>
-            </article>
-          </div>
-        </div>
-        <button class="carousel-control-prev ms-n4" type="button" data-bs-target="#carouselClinics"
-                data-bs-slide="prev">
-          <img src="img/arrow-left.svg" alt="Назад">
-          <span class="visually-hidden">Назад</span>
-        </button>
-        <button class="carousel-control-next me-n4" type="button" data-bs-target="#carouselClinics"
-                data-bs-slide="next">
-          <img src="img/arrow-right.svg" alt="Вперед">
-          <span class="visually-hidden">Вперед</span>
-        </button>
-      </div>
       <div class="text-center mt-3">
         <a href="#" class="btn btn-primary">Все клиники</a>
       </div>
