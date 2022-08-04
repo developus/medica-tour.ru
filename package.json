@@ -31,7 +31,6 @@
     "sass": "^1.54.0"
   },
   "dependencies": {
-    "bootstrap": "^5.2.0",
-    "slick-slider": "^1.8.2"
+    "bootstrap": "^5.2.0"
   }
 }
