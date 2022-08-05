@@ -96,28 +96,124 @@
     </section>
 
     <section class="card border-0 bg-white shadow p-3 mb-3">
-      <h2 class="card-title">Цены на медицинские услуги</h2>
-      <nav class="nav nav-pills nav-fill">
-        <a class="nav-link active" aria-current="page" href="#">Косметология</a>
-        <a class="nav-link" href="#">Физеотерапия</a>
-        <a class="nav-link" href="#">Общие процедуры</a>
-        <a class="nav-link" href="#">Пункция</a>
-        <a class="nav-link" href="#">Функциональная диагностика</a>
-      </nav>
-      <ul class="list-group">
-        <li class="list-group-item d-flex justify-content-between">
-          Дарсонвализация
-          <span>от 2200 руб.</span>
+      <ul class="row nav nav-tabs g-2 text-nowrap border-0 mb-3" id="medprice" role="tablist">
+        <li class="col-auto nav-item" role="presentation">
+          <button class="btn btn-outline-primary active w-100" id="clinic-1-tab" data-bs-toggle="tab" data-bs-target="#clinic-1" type="button" role="tab" aria-controls="home" aria-selected="true">Косметология</button>
         </li>
-        <li class="list-group-item d-flex justify-content-between">
-          Фонофорез
-          <span>от 3800 руб.</span>
+        <li class="col-auto nav-item" role="presentation">
+          <button class="btn btn-outline-primary w-100" id="clinic-2-tab" data-bs-toggle="tab" data-bs-target="#clinic-2" type="button" role="tab" aria-controls="profile" aria-selected="false">Косметология</button>
         </li>
-        <li class="list-group-item d-flex justify-content-between">
-          Массаж лица
-          <span>от 3000 руб.</span>
+        <li class="col-auto nav-item" role="presentation">
+          <button class="btn btn-outline-primary w-100" id="clinic-3-tab" data-bs-toggle="tab" data-bs-target="#clinic-3" type="button" role="tab" aria-controls="messages" aria-selected="false">Физеотерапия</button>
+        </li>
+        <li class="col-auto nav-item" role="presentation">
+          <button class="btn btn-outline-primary w-100" id="clinic-4-tab" data-bs-toggle="tab" data-bs-target="#clinic-4" type="button" role="tab" aria-controls="settings" aria-selected="false">Общие процедуры</button>
+        </li>
+        <li class="col-auto nav-item" role="presentation">
+          <button class="btn btn-outline-primary w-100" id="clinic-5-tab" data-bs-toggle="tab" data-bs-target="#clinic-5" type="button" role="tab" aria-controls="settings" aria-selected="false">Пункция</button>
+        </li>
+        <li class="col-auto nav-item" role="presentation">
+          <button class="btn btn-outline-primary w-100" id="clinic-6-tab" data-bs-toggle="tab" data-bs-target="#clinic-6" type="button" role="tab" aria-controls="settings" aria-selected="false">Функциональная диагностика</button>
         </li>
       </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="clinic-1" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between">
+              Дарсонвализация 1
+              <span>от 2200 руб.</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              Фонофорез 1
+              <span>от 3800 руб.</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              Массаж лица 2
+              <span>от 3000 руб.</span>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-pane" id="clinic-2" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between">
+              Дарсонвализация 2
+              <span>от 2200 руб.</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              Фонофорез 2
+              <span>от 3800 руб.</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              Массаж лица 2
+              <span>от 3000 руб.</span>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-pane" id="clinic-3" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between">
+              Дарсонвализация 3
+              <span>от 2200 руб.</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              Фонофорез 3
+              <span>от 3800 руб.</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              Массаж лица 3
+              <span>от 3000 руб.</span>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-pane" id="clinic-4" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between">
+              Дарсонвализация 4
+              <span>от 2200 руб.</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              Фонофорез 4
+              <span>от 3800 руб.</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              Массаж лица 4
+              <span>от 3000 руб.</span>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-pane" id="clinic-5" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between">
+              Дарсонвализация 5
+              <span>от 2200 руб.</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              Фонофорез 5
+              <span>от 3800 руб.</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              Массаж лица 5
+              <span>от 3000 руб.</span>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-pane" id="clinic-6" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between">
+              Дарсонвализация 6
+              <span>от 2200 руб.</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              Фонофорез 6
+              <span>от 3800 руб.</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              Массаж лица 6
+              <span>от 3000 руб.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <section class="card border-0 bg-white shadow p-3 mb-3">
