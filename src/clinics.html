@@ -93,7 +93,7 @@
       <h1 class="mb-0">77 клиник Москвы</h1>
     </section>
 
-    <div class="card border-0 shadow mb-3">
+    <div class="card border-0 shadow mb-3 d-xl-none">
       <button type="button" class="btn d-block" data-bs-toggle="modal" data-bs-target="#filterModal">
         <span class="filter-btn">Фильтр</span>
       </button>
@@ -246,174 +246,333 @@
       </div>
     </div>
 
-    <article class="card border-0 bg-white shadow mb-3">
-      <div class="card-body">
-        <img src="img/clinic-image.jpg" alt="Клиника National Medical Research Center named after V.A.Almazov"
-             class="card-img">
-        <div class="reviews row align-items-center my-3">
-          <div class="rating col-auto">
-            <div class="row gx-1">
-              <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-              <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-              <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-              <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-              <div class="col"><img src="img/star.svg" class="align-top" alt=""></div>
-            </div>
+    <div class="row">
+      <div class="d-none d-xl-block col-xl-3">
+        <aside class="card border-0 bg-white shadow">
+          <div class="card-body">
+            <h2 class="card-title h3">Подобрать клинику</h2>
+            <form>
+              <fieldset class="mb-3">
+                <label for="filterCountry" class="form-label h4">Страна</label>
+                <select name="filterCountry" id="filterCountry" class="form-select">
+                  <option selected>Выберите страну</option>
+                  <option value="Россия">Россия</option>
+                  <option value="Китай">Китай</option>
+                  <option value="Италия">Италия</option>
+                </select>
+              </fieldset>
+              <fieldset class="mb-3">
+                <label for="filterCity" class="form-label h4">Город</label>
+                <select name="filterCity" id="filterCity" class="form-select">
+                  <option selected>Выберите город</option>
+                  <option value="Москва">Москва</option>
+                  <option value="Санкт-Петербург">Санкт-Петербург</option>
+                  <option value="Казань">Казань</option>
+                  <option value="Владивосток">Владивосток</option>
+                </select>
+              </fieldset>
+              <fieldset class="mb-3">
+                <label for="filterDirectionSearch" class="form-label h4">Направление</label>
+                <input type="search" name="filterDirectionSearch" id="filterDirectionSearch" class="form-control mb-2"
+                       placeholder="Поиск">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="filterDirection" id="filterDirection1"
+                         value="Аллергология" checked>
+                  <label class="form-check-label" for="filterDirection1">
+                    Аллергология (5)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="filterDirection" id="filterDirection2"
+                         value="Алкоголизм, наркомания и другие зависимости">
+                  <label class="form-check-label" for="filterDirection2">
+                    Алкоголизм, наркомания и другие зависимости (10)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="filterDirection" id="filterDirection3"
+                         value="Бариатрическая хирургия">
+                  <label class="form-check-label" for="filterDirection3">
+                    Бариатрическая хирургия (15)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="filterDirection" id="filterDirection4"
+                         value="Гастроэнтерология">
+                  <label class="form-check-label" for="filterDirection4">
+                    Гастроэнтерология (23)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="filterDirection" id="filterDirection5"
+                         value="Гепатит С">
+                  <label class="form-check-label" for="filterDirection5">
+                    Гепатит С (123)
+                  </label>
+                </div>
+                <a class="link-primary">Посмотреть все</a>
+              </fieldset>
+              <fieldset class="mb-3">
+                <label for="filterProceduresSearch" class="form-label h4">Процедуры</label>
+                <input type="search" name="filterDirectionSearch" id="filterProceduresSearch" class="form-control mb-2"
+                       placeholder="Поиск">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="filterDirection" id="filterProcedures1"
+                         value="ЭКО" checked>
+                  <label class="form-check-label" for="filterProcedures1">
+                    ЭКО (31)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="filterDirection" id="filterProcedures2"
+                         value="Ринопластика">
+                  <label class="form-check-label" for="filterProcedures2">
+                    Ринопластика (311)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="filterDirection" id="filterProcedures3"
+                         value="Прививки">
+                  <label class="form-check-label" for="filterProcedures3">
+                    Прививки (5)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="filterDirection" id="filterProcedures4"
+                         value="Брекеты">
+                  <label class="form-check-label" for="filterProcedures4">
+                    Брекеты (31)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="filterDirection" id="filterProcedures5"
+                         value="Массаж">
+                  <label class="form-check-label" for="filterProcedures5">
+                    Массаж (331)
+                  </label>
+                </div>
+                <a class="link-primary">Посмотреть все</a>
+              </fieldset>
+              <fieldset class="mb-3">
+                <legend class="form-label h4">Дополнительно</legend>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="filterExtras1">
+                  <label class="form-check-label" for="filterExtras1">
+                    Wifi (31)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="filterExtras2" checked>
+                  <label class="form-check-label" for="filterExtras2">
+                    Парковка (222)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="filterExtras3">
+                  <label class="form-check-label" for="filterExtras3">
+                    Бассейн (333)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="filterExtras4">
+                  <label class="form-check-label" for="filterExtras4">
+                    Завтраки (111)
+                  </label>
+                </div>
+              </fieldset>
+            </form>
           </div>
-          <div class="col comments text-black-50">10 отзывов</div>
-        </div>
-        <div class="location">Россия, Санкт-Петербург</div>
-        <h2 class="card-title">
-          <a href="clinic.html" class="text-black">
-            National Medical Research Center named after V.A.Almazov
-          </a>
-        </h2>
+        </aside>
+      </div>
+      <div class="col-12 col-xl-9">
+        <article class="card border-0 bg-white shadow mb-3">
+          <div class="card-body">
+            <div class="row align-items-center">
+              <div class="col-12 col-lg-4">
+                <img src="img/clinic-image.jpg" alt="Клиника National Medical Research Center named after V.A.Almazov"
+                     class="card-img">
+                <div class="reviews row align-items-center my-3">
+                  <div class="rating col-auto">
+                    <div class="row gx-1">
+                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      <div class="col"><img src="img/star.svg" class="align-top" alt=""></div>
+                    </div>
+                  </div>
+                  <div class="col comments text-black-50">10 отзывов</div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-8">
+                <div class="location">Россия, Санкт-Петербург</div>
+                <h2 class="card-title">
+                  <a href="clinic.html" class="text-black">
+                    National Medical Research Center named after V.A.Almazov
+                  </a>
+                </h2>
 
-        <p>
-          The V.A.Almazov National Medical Research Center is one of the leading medical institutions in the country
-          providing specialized and high-tech medical care to the population.
-        </p>
+                <p>
+                  The V.A.Almazov National Medical Research Center is one of the leading medical institutions in the country
+                  providing specialized and high-tech medical care to the population.
+                </p>
 
-        <h3>Последний отзыв</h3>
-        <div class="bg-light rounded p-3">
-          <h4 class="card-title fw-bold">Ольга</h4>
-          <p class="card-text">
-            Услышала про фирму "МедикаТур" на канале РБК, на всякий случай сохранила информацию. И вот «всякий
-            случай» настал. Я обратилась за онлайн-консультацией (Second opinion или мнение второго врача) и с
-            просьбой подобрать для этой цели лучшую клинику.
+                <h3>Последний отзыв</h3>
+                <div class="bg-light rounded p-3">
+                  <h4 class="card-title fw-bold">Ольга</h4>
+                  <p class="card-text">
+                    Услышала про фирму "МедикаТур" на канале РБК, на всякий случай сохранила информацию. И вот «всякий
+                    случай» настал. Я обратилась за онлайн-консультацией (Second opinion или мнение второго врача) и с
+                    просьбой подобрать для этой цели лучшую клинику.
 
-            Мои документы с анализами и биопсией сразу разослали почти в десяток больниц по всему свету, которые
-            тут
-            же откликнулись предварительной консультацией относительно плана лечения, подкрепленной прайс-листами.
-            И
-            всё это бесплатно для меня! Я была потрясена!
-          </p>
-          <div class="reviews row align-items-center">
-            <div class="rating col-auto">
-              <div class="row gx-1">
-                <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                    Мои документы с анализами и биопсией сразу разослали почти в десяток больниц по всему свету, которые
+                    тут
+                    же откликнулись предварительной консультацией относительно плана лечения, подкрепленной прайс-листами.
+                    И
+                    всё это бесплатно для меня! Я была потрясена!
+                  </p>
+                  <div class="reviews row align-items-center">
+                    <div class="rating col-auto">
+                      <div class="row gx-1">
+                        <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                        <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                        <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                        <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                        <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </article>
-    <article class="card border-0 bg-white shadow mb-3">
-      <div class="card-body">
-        <img src="img/clinic-image.jpg" alt="Клиника National Medical Research Center named after V.A.Almazov"
-             class="card-img">
-        <div class="reviews row align-items-center my-3">
-          <div class="rating col-auto">
-            <div class="row gx-1">
-              <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-              <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-              <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-              <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-              <div class="col"><img src="img/star.svg" class="align-top" alt=""></div>
-            </div>
-          </div>
-          <div class="col comments text-black-50">10 отзывов</div>
-        </div>
-        <div class="location">Россия, Санкт-Петербург</div>
-        <h2 class="card-title">
-          <a href="clinic.html" class="text-black">
-            National Medical Research Center named after V.A.Almazov
-          </a>
-        </h2>
+        </article>
+        <article class="card border-0 bg-white shadow mb-3">
+          <div class="card-body">
+            <div class="row align-items-center">
+              <div class="col-12 col-lg-4">
+                <img src="img/clinic-image.jpg" alt="Клиника National Medical Research Center named after V.A.Almazov"
+                     class="card-img">
+                <div class="reviews row align-items-center my-3">
+                  <div class="rating col-auto">
+                    <div class="row gx-1">
+                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      <div class="col"><img src="img/star.svg" class="align-top" alt=""></div>
+                    </div>
+                  </div>
+                  <div class="col comments text-black-50">10 отзывов</div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-8">
+                <div class="location">Россия, Санкт-Петербург</div>
+                <h2 class="card-title">
+                  <a href="clinic.html" class="text-black">
+                    National Medical Research Center named after V.A.Almazov
+                  </a>
+                </h2>
 
-        <p>
-          The V.A.Almazov National Medical Research Center is one of the leading medical institutions in the country
-          providing specialized and high-tech medical care to the population.
-        </p>
+                <p>
+                  The V.A.Almazov National Medical Research Center is one of the leading medical institutions in the country
+                  providing specialized and high-tech medical care to the population.
+                </p>
 
-        <h3>Последний отзыв</h3>
-        <div class="bg-light rounded p-3">
-          <h4 class="card-title fw-bold">Ольга</h4>
-          <p class="card-text">
-            Услышала про фирму "МедикаТур" на канале РБК, на всякий случай сохранила информацию. И вот «всякий
-            случай» настал. Я обратилась за онлайн-консультацией (Second opinion или мнение второго врача) и с
-            просьбой подобрать для этой цели лучшую клинику.
+                <h3>Последний отзыв</h3>
+                <div class="bg-light rounded p-3">
+                  <h4 class="card-title fw-bold">Ольга</h4>
+                  <p class="card-text">
+                    Услышала про фирму "МедикаТур" на канале РБК, на всякий случай сохранила информацию. И вот «всякий
+                    случай» настал. Я обратилась за онлайн-консультацией (Second opinion или мнение второго врача) и с
+                    просьбой подобрать для этой цели лучшую клинику.
 
-            Мои документы с анализами и биопсией сразу разослали почти в десяток больниц по всему свету, которые
-            тут
-            же откликнулись предварительной консультацией относительно плана лечения, подкрепленной прайс-листами.
-            И
-            всё это бесплатно для меня! Я была потрясена!
-          </p>
-          <div class="reviews row align-items-center">
-            <div class="rating col-auto">
-              <div class="row gx-1">
-                <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                    Мои документы с анализами и биопсией сразу разослали почти в десяток больниц по всему свету, которые
+                    тут
+                    же откликнулись предварительной консультацией относительно плана лечения, подкрепленной прайс-листами.
+                    И
+                    всё это бесплатно для меня! Я была потрясена!
+                  </p>
+                  <div class="reviews row align-items-center">
+                    <div class="rating col-auto">
+                      <div class="row gx-1">
+                        <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                        <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                        <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                        <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                        <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </article>
-    <article class="card border-0 bg-white shadow mb-3">
-      <div class="card-body">
-        <img src="img/clinic-image.jpg" alt="Клиника National Medical Research Center named after V.A.Almazov"
-             class="card-img">
-        <div class="reviews row align-items-center my-3">
-          <div class="rating col-auto">
-            <div class="row gx-1">
-              <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-              <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-              <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-              <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-              <div class="col"><img src="img/star.svg" class="align-top" alt=""></div>
-            </div>
-          </div>
-          <div class="col comments text-black-50">10 отзывов</div>
-        </div>
-        <div class="location">Россия, Санкт-Петербург</div>
-        <h2 class="card-title">
-          <a href="clinic.html" class="text-black">
-            National Medical Research Center named after V.A.Almazov
-          </a>
-        </h2>
+        </article>
+        <article class="card border-0 bg-white shadow mb-3">
+          <div class="card-body">
+            <div class="row align-items-center">
+              <div class="col-12 col-lg-4">
+                <img src="img/clinic-image.jpg" alt="Клиника National Medical Research Center named after V.A.Almazov"
+                     class="card-img">
+                <div class="reviews row align-items-center my-3">
+                  <div class="rating col-auto">
+                    <div class="row gx-1">
+                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      <div class="col"><img src="img/star.svg" class="align-top" alt=""></div>
+                    </div>
+                  </div>
+                  <div class="col comments text-black-50">10 отзывов</div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-8">
+                <div class="location">Россия, Санкт-Петербург</div>
+                <h2 class="card-title">
+                  <a href="clinic.html" class="text-black">
+                    National Medical Research Center named after V.A.Almazov
+                  </a>
+                </h2>
 
-        <p>
-          The V.A.Almazov National Medical Research Center is one of the leading medical institutions in the country
-          providing specialized and high-tech medical care to the population.
-        </p>
+                <p>
+                  The V.A.Almazov National Medical Research Center is one of the leading medical institutions in the country
+                  providing specialized and high-tech medical care to the population.
+                </p>
 
-        <h3>Последний отзыв</h3>
-        <div class="bg-light rounded p-3">
-          <h4 class="card-title fw-bold">Ольга</h4>
-          <p class="card-text">
-            Услышала про фирму "МедикаТур" на канале РБК, на всякий случай сохранила информацию. И вот «всякий
-            случай» настал. Я обратилась за онлайн-консультацией (Second opinion или мнение второго врача) и с
-            просьбой подобрать для этой цели лучшую клинику.
+                <h3>Последний отзыв</h3>
+                <div class="bg-light rounded p-3">
+                  <h4 class="card-title fw-bold">Ольга</h4>
+                  <p class="card-text">
+                    Услышала про фирму "МедикаТур" на канале РБК, на всякий случай сохранила информацию. И вот «всякий
+                    случай» настал. Я обратилась за онлайн-консультацией (Second opinion или мнение второго врача) и с
+                    просьбой подобрать для этой цели лучшую клинику.
 
-            Мои документы с анализами и биопсией сразу разослали почти в десяток больниц по всему свету, которые
-            тут
-            же откликнулись предварительной консультацией относительно плана лечения, подкрепленной прайс-листами.
-            И
-            всё это бесплатно для меня! Я была потрясена!
-          </p>
-          <div class="reviews row align-items-center">
-            <div class="rating col-auto">
-              <div class="row gx-1">
-                <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                    Мои документы с анализами и биопсией сразу разослали почти в десяток больниц по всему свету, которые
+                    тут
+                    же откликнулись предварительной консультацией относительно плана лечения, подкрепленной прайс-листами.
+                    И
+                    всё это бесплатно для меня! Я была потрясена!
+                  </p>
+                  <div class="reviews row align-items-center">
+                    <div class="rating col-auto">
+                      <div class="row gx-1">
+                        <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                        <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                        <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                        <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                        <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </article>
       </div>
-    </article>
+    </div>
 
     <nav aria-label="Страницы клиник">
       <ul class="pagination justify-content-center">
