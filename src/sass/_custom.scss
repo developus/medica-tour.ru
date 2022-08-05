@@ -43,3 +43,21 @@ a {
     background: #ffffff;
   }
 }
+
+.filter-btn {
+  position: relative;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 24px;
+    height: 24px;
+    background: url("../img/filter-icon.svg") no-repeat center center;
+  }
+}

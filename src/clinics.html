@@ -95,7 +95,7 @@
 
     <div class="card border-0 shadow mb-3">
       <button type="button" class="btn d-block" data-bs-toggle="modal" data-bs-target="#filterModal">
-        Фильтр
+        <span class="filter-btn">Фильтр</span>
       </button>
     </div>
 
@@ -103,15 +103,144 @@
       <div class="modal-dialog modal-fullscreen">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="filterModalLabel">Заголовок модального окна</h5>
+            <h2 class="modal-title" id="filterModalLabel">Подобрать клинику</h2>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
           </div>
           <div class="modal-body">
-            ...
+            <form>
+              <fieldset class="mb-3">
+                <label for="filterCountry" class="form-label h3">Страна</label>
+                <select name="filterCountry" id="filterCountry" class="form-select">
+                  <option selected>Выберите страну</option>
+                  <option value="Россия">Россия</option>
+                  <option value="Китай">Китай</option>
+                  <option value="Италия">Италия</option>
+                </select>
+              </fieldset>
+              <fieldset class="mb-3">
+                <label for="filterCity" class="form-label h3">Город</label>
+                <select name="filterCity" id="filterCity" class="form-select">
+                  <option selected>Выберите город</option>
+                  <option value="Москва">Москва</option>
+                  <option value="Санкт-Петербург">Санкт-Петербург</option>
+                  <option value="Казань">Казань</option>
+                  <option value="Владивосток">Владивосток</option>
+                </select>
+              </fieldset>
+              <fieldset class="mb-3">
+                <label for="filterDirectionSearch" class="form-label h3">Направление</label>
+                <input type="search" name="filterDirectionSearch" id="filterDirectionSearch" class="form-control mb-2"
+                       placeholder="Поиск">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="filterDirection" id="filterDirection1"
+                         value="Аллергология" checked>
+                  <label class="form-check-label" for="filterDirection1">
+                    Аллергология (5)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="filterDirection" id="filterDirection2"
+                         value="Алкоголизм, наркомания и другие зависимости">
+                  <label class="form-check-label" for="filterDirection2">
+                    Алкоголизм, наркомания и другие зависимости (10)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="filterDirection" id="filterDirection3"
+                         value="Бариатрическая хирургия">
+                  <label class="form-check-label" for="filterDirection3">
+                    Бариатрическая хирургия (15)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="filterDirection" id="filterDirection4"
+                         value="Гастроэнтерология">
+                  <label class="form-check-label" for="filterDirection4">
+                    Гастроэнтерология (23)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="filterDirection" id="filterDirection5"
+                         value="Гепатит С">
+                  <label class="form-check-label" for="filterDirection5">
+                    Гепатит С (123)
+                  </label>
+                </div>
+                <a class="link-primary">Посмотреть все</a>
+              </fieldset>
+              <fieldset class="mb-3">
+                <label for="filterProceduresSearch" class="form-label h3">Процедуры</label>
+                <input type="search" name="filterDirectionSearch" id="filterProceduresSearch" class="form-control mb-2"
+                       placeholder="Поиск">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="filterDirection" id="filterProcedures1"
+                         value="ЭКО" checked>
+                  <label class="form-check-label" for="filterProcedures1">
+                    ЭКО (31)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="filterDirection" id="filterProcedures2"
+                         value="Ринопластика">
+                  <label class="form-check-label" for="filterProcedures2">
+                    Ринопластика (311)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="filterDirection" id="filterProcedures3"
+                         value="Прививки">
+                  <label class="form-check-label" for="filterProcedures3">
+                    Прививки (5)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="filterDirection" id="filterProcedures4"
+                         value="Брекеты">
+                  <label class="form-check-label" for="filterProcedures4">
+                    Брекеты (31)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="filterDirection" id="filterProcedures5"
+                         value="Массаж">
+                  <label class="form-check-label" for="filterProcedures5">
+                    Массаж (331)
+                  </label>
+                </div>
+                <a class="link-primary">Посмотреть все</a>
+              </fieldset>
+              <fieldset class="mb-3">
+                <legend class="form-label h3">Дополнительно</legend>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="filterExtras1">
+                  <label class="form-check-label" for="filterExtras1">
+                    Wifi (31)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="filterExtras2" checked>
+                  <label class="form-check-label" for="filterExtras2">
+                    Парковка (222)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="filterExtras3">
+                  <label class="form-check-label" for="filterExtras3">
+                    Бассейн (333)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="filterExtras4">
+                  <label class="form-check-label" for="filterExtras4">
+                    Завтраки (111)
+                  </label>
+                </div>
+              </fieldset>
+            </form>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-            <button type="button" class="btn btn-primary">Сохранить изменения</button>
+            <button type="button" class="btn btn-primary">Применить</button>
           </div>
         </div>
       </div>
@@ -367,23 +496,5 @@
   </div>
 </footer>
 <script src="js/bootstrap.bundle.min.js"></script>
-<script>
-  const filterModal = document.getElementById('filterModal')
-  filterModal.addEventListener('show.bs.modal', event => {
-    // Кнопка, которая активировала модальное окно
-    const button = event.relatedTarget
-    // Извлекает информацию из атрибутов data-bs-*
-    const recipient = button.getAttribute('data-bs-whatever')
-    // При необходимости вы можете инициировать запрос AJAX здесь,
-    // а затем выполнить обновление в обратном вызове.
-    //
-    // Обновляет содержимое модального окна.
-    const modalTitle = filterModal.querySelector('.modal-title')
-    const modalBodyInput = filterModal.querySelector('.modal-body input')
-
-    modalTitle.textContent = `New message to ${recipient}`
-    modalBodyInput.value = recipient
-  })
-</script>
 </body>
 </html>
