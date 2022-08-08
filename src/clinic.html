@@ -4,10 +4,37 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Medica-tour.ru</title>
+  <link rel="stylesheet" href="js/splide/dist/css/splide.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header>
+  <div class="d-none d-lg-block bg-mt-dark text-white">
+    <div class="container d-flex justify-content-between align-items-center">
+      <ul class="navbar-nav d-flex flex-row">
+        <li class="nav-item me-3">
+          <a class="nav-link fw-normal" href="contacts.html">Контакты</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-normal" href="#">О нас</a>
+        </li>
+      </ul>
+      <ul class="nav">
+        <li class="nav-item"><a href="tel:+79999999999"><img src="img/phone.svg" alt="Позвонить нам"></a></li>
+        <li class="nav-item ms-1"><a href="#"><img src="img/whatsapp.svg" alt="Мы в What's App"></a></li>
+        <li class="nav-item ms-1"><a href="#"><img src="img/viber.svg" alt="Мы в Viber"></a></li>
+        <li class="nav-item ms-1"><a href="#"><img src="img/telegram.svg" alt="Мы в Telegram"></a></li>
+      </ul>
+      <ul class="navbar-nav d-flex flex-row">
+        <li class="nav-item me-3">
+          <a class="user-link nav-link fw-normal" href="#">Вход</a>
+        </li>
+        <li class="nav-item">
+          <a class="register-link nav-link fw-normal" href="#">Регистрация</a>
+        </li>
+      </ul>
+    </div>
+  </div>
   <nav class="navbar navbar-expand-lg bg-white">
     <div class="container">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -18,25 +45,33 @@
       <a class="navbar-brand" href="index.html">
         <img src="img/logo.png" alt="Логотип Медика-Тур">
       </a>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNavDropdown">
         <ul class="navbar-nav">
-          <li class="nav-item">
+          <li class="nav-item me-lg-5">
             <a class="nav-link" href="clinics.html">Клиники</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item me-lg-5">
             <a class="nav-link" href="categories.html">Заболевания</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item me-lg-5">
             <a class="nav-link" href="categories.html">Процедуры</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="categories.html">Страны</a>
           </li>
         </ul>
+        <ul class="navbar-nav d-lg-none">
+          <li class="nav-item">
+            <a class="nav-link" href="clinics.html">Вход</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="categories.html">Регистрация</a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
-  <div class="py-5"
+  <div class="search py-5"
        style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/city.jpg') no-repeat center; background-size: cover">
     <div class="container">
       <div class="input-group">
@@ -58,10 +93,17 @@
           <li class="breadcrumb-item active" aria-current="page">Клиники</li>
         </ol>
       </nav>
-      <h1 class="mb-0">National Medical Research Center named after V. A. Almazov</h1>
+      <h1 class="text-center">National Medical Research Center named after V. A. Almazov</h1>
+      <div class="text-center">
+        <div class="d-flex align-items-center justify-content-center">
+          <img src="img/star-active.svg" class="img-fluid me-1" alt="Рейтинг">
+          <b class="h1 mb-0">4.9</b>
+        </div>
+        <small class="text-muted d-block">10 отзывов</small>
+      </div>
     </section>
     <div class="row row-cols-1 row-cols-lg-2 mb-3">
-      <div class="col">
+      <div class="col mb-3">
         <section class="card border-0 bg-white shadow h-100">
           <img class="card-img-top" src="img/clinic-image.jpg"
                alt="National Medical Research Center named after V. A. Almazov">
@@ -84,13 +126,37 @@
 
       <div class="col">
         <section class="card border-0 bg-white shadow overflow-hidden h-100">
-          <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/?ll=37.646930%2C55.725146&utm_medium=mapframe&utm_source=maps&z=10.43" style="color:#eee;font-size:12px;position:absolute;top:14px;">Москва — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCURyPU1PD" width="100%" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>            <b class="d-block mb-2">Россия, г. Москва, ул. Пушкина, д.1</b>
-            <ul class="list-group mb-3">
-              <li class="list-group-item">Год открытия: 2020</li>
-              <li class="list-group-item">Принимаем: Взрослых пациентов</li>
-              <li class="list-group-item">Типы подопечных: Одиночки, Пары, VIP</li>
-              <li class="list-group-item">Всего коек: 112</li>
-              <li class="list-group-item">Докторов: 30</li>
+          <div style="position:relative;overflow:hidden;"><a
+            href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps"
+            style="color:#eee;font-size:12px;position:absolute;top:0;">Москва</a><a
+            href="https://yandex.ru/maps/213/moscow/?ll=37.646930%2C55.725146&utm_medium=mapframe&utm_source=maps&z=10.43"
+            style="color:#eee;font-size:12px;position:absolute;top:14px;">Москва — Яндекс Карты</a>
+            <iframe src="https://yandex.ru/map-widget/v1/-/CCURyPU1PD" width="100%" height="400" frameborder="1"
+                    allowfullscreen="true" style="position:relative;"></iframe>
+          </div>
+          <div class="card-body">
+            <b class="d-block mb-2">Россия, г. Москва, ул. Пушкина, д.1</b>
+            <ul class="list-group list-group-flush mb-3">
+              <li class="list-group-item border-0 ps-0 d-flex align-items-center">
+                <img src="img/calendar.svg" alt="Год открытия" class="img-fluid me-2">
+                Год открытия: 2020
+              </li>
+              <li class="list-group-item border-0 ps-0 d-flex align-items-center">
+                <img src="img/people.svg" alt="Возраст приёма" class="img-fluid me-2">
+                Принимаем: Взрослых пациентов
+              </li>
+              <li class="list-group-item border-0 ps-0 d-flex align-items-center">
+                <img src="img/bell.svg" alt="Типы подопечных" class="img-fluid me-2">
+                Типы подопечных: Одиночки, Пары, VIP
+              </li>
+              <li class="list-group-item border-0 ps-0 d-flex align-items-center">
+                <img src="img/hospital-bed.svg" alt="Количество коек" class="img-fluid me-2">
+                Всего коек: 112
+              </li>
+              <li class="list-group-item border-0 ps-0 d-flex align-items-center">
+                <img src="img/doctor.svg" alt="Количество докторов" class="img-fluid me-2">
+                Докторов: 30
+              </li>
             </ul>
             <button type="button" class="btn btn-primary w-100">Отправить запрос</button>
           </div>
@@ -100,22 +166,40 @@
     <section class="card border-0 bg-white shadow p-3 mb-3">
       <ul class="row nav nav-tabs g-2 text-nowrap border-0 mb-3" id="medprice" role="tablist">
         <li class="col-auto nav-item" role="presentation">
-          <button class="btn btn-outline-primary active w-100" id="clinic-1-tab" data-bs-toggle="tab" data-bs-target="#clinic-1" type="button" role="tab" aria-controls="home" aria-selected="true">Косметология</button>
+          <button class="btn btn-outline-primary active w-100" id="clinic-1-tab" data-bs-toggle="tab"
+                  data-bs-target="#clinic-1" type="button" role="tab" aria-controls="home" aria-selected="true">
+            Косметология
+          </button>
         </li>
         <li class="col-auto nav-item" role="presentation">
-          <button class="btn btn-outline-primary w-100" id="clinic-2-tab" data-bs-toggle="tab" data-bs-target="#clinic-2" type="button" role="tab" aria-controls="profile" aria-selected="false">Косметология</button>
+          <button class="btn btn-outline-primary w-100" id="clinic-2-tab" data-bs-toggle="tab"
+                  data-bs-target="#clinic-2"
+                  type="button" role="tab" aria-controls="profile" aria-selected="false">Косметология
+          </button>
         </li>
         <li class="col-auto nav-item" role="presentation">
-          <button class="btn btn-outline-primary w-100" id="clinic-3-tab" data-bs-toggle="tab" data-bs-target="#clinic-3" type="button" role="tab" aria-controls="messages" aria-selected="false">Физеотерапия</button>
+          <button class="btn btn-outline-primary w-100" id="clinic-3-tab" data-bs-toggle="tab"
+                  data-bs-target="#clinic-3"
+                  type="button" role="tab" aria-controls="messages" aria-selected="false">Физеотерапия
+          </button>
         </li>
         <li class="col-auto nav-item" role="presentation">
-          <button class="btn btn-outline-primary w-100" id="clinic-4-tab" data-bs-toggle="tab" data-bs-target="#clinic-4" type="button" role="tab" aria-controls="settings" aria-selected="false">Общие процедуры</button>
+          <button class="btn btn-outline-primary w-100" id="clinic-4-tab" data-bs-toggle="tab"
+                  data-bs-target="#clinic-4"
+                  type="button" role="tab" aria-controls="settings" aria-selected="false">Общие процедуры
+          </button>
         </li>
         <li class="col-auto nav-item" role="presentation">
-          <button class="btn btn-outline-primary w-100" id="clinic-5-tab" data-bs-toggle="tab" data-bs-target="#clinic-5" type="button" role="tab" aria-controls="settings" aria-selected="false">Пункция</button>
+          <button class="btn btn-outline-primary w-100" id="clinic-5-tab" data-bs-toggle="tab"
+                  data-bs-target="#clinic-5"
+                  type="button" role="tab" aria-controls="settings" aria-selected="false">Пункция
+          </button>
         </li>
         <li class="col-auto nav-item" role="presentation">
-          <button class="btn btn-outline-primary w-100" id="clinic-6-tab" data-bs-toggle="tab" data-bs-target="#clinic-6" type="button" role="tab" aria-controls="settings" aria-selected="false">Функциональная диагностика</button>
+          <button class="btn btn-outline-primary w-100" id="clinic-6-tab" data-bs-toggle="tab"
+                  data-bs-target="#clinic-6"
+                  type="button" role="tab" aria-controls="settings" aria-selected="false">Функциональная диагностика
+          </button>
         </li>
       </ul>
       <div class="tab-content">
@@ -266,118 +350,125 @@
       </div>
     </section>
 
-    <section class="card border-0 bg-white shadow p-3 mb-3">
+    <section class="card border-0 bg-white shadow p-3">
       <h2 class="card-title">Отзывы</h2>
-      <div id="carouselReviews" class="carousel slide overflow-hidden px-3 mx-n1" data-bs-ride="carousel">
-        <div class="carousel-inner py-1">
-          <div class="carousel-item active p-4">
-            <div class="card border-0 shadow">
-              <div class="card-body">
-                <h3 class="card-title fw-bold">Ольга</h3>
-                <p class="card-text">
-                  Услышала про фирму "МедикаТур" на канале РБК, на всякий случай сохранила информацию. И вот «всякий
-                  случай» настал. Я обратилась за онлайн-консультацией (Second opinion или мнение второго врача) и с
-                  просьбой подобрать для этой цели лучшую клинику.
-
-                  Мои документы с анализами и биопсией сразу разослали почти в десяток больниц по всему свету, которые
-                  тут
-                  же откликнулись предварительной консультацией относительно плана лечения, подкрепленной прайс-листами.
-                  И
-                  всё это бесплатно для меня! Я была потрясена!
-                </p>
-                <a href="#" class="card-link text-decoration-underline">National Medical Research Center named after
-                  V.A.Almazov</a>
-                <div class="location text-muted">Россия, Санкт-Петербург</div>
-                <div class="reviews row align-items-center">
-                  <div class="rating col-auto">
-                    <div class="row gx-1">
-                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item p-4">
-            <div class="card border-0 shadow">
-              <div class="card-body">
-                <h3 class="card-title fw-bold">Ольга</h3>
-                <p class="card-text">
-                  Услышала про фирму "МедикаТур" на канале РБК, на всякий случай сохранила информацию. И вот «всякий
-                  случай» настал. Я обратилась за онлайн-консультацией (Second opinion или мнение второго врача) и с
-                  просьбой подобрать для этой цели лучшую клинику.
-
-                  Мои документы с анализами и биопсией сразу разослали почти в десяток больниц по всему свету, которые
-                  тут
-                  же откликнулись предварительной консультацией относительно плана лечения, подкрепленной прайс-листами.
-                  И
-                  всё это бесплатно для меня! Я была потрясена!
-                </p>
-                <a href="#" class="card-link text-decoration-underline">National Medical Research Center named after
-                  V.A.Almazov</a>
-                <div class="location text-muted">Россия, Санкт-Петербург</div>
-                <div class="reviews row align-items-center">
-                  <div class="rating col-auto">
-                    <div class="row gx-1">
-                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item p-4">
-            <div class="card border-0 shadow">
-              <div class="card-body">
-                <h3 class="card-title fw-bold">Ольга</h3>
-                <p class="card-text">
-                  Услышала про фирму "МедикаТур" на канале РБК, на всякий случай сохранила информацию. И вот «всякий
-                  случай» настал. Я обратилась за онлайн-консультацией (Second opinion или мнение второго врача) и с
-                  просьбой подобрать для этой цели лучшую клинику.
-
-                  Мои документы с анализами и биопсией сразу разослали почти в десяток больниц по всему свету, которые
-                  тут
-                  же откликнулись предварительной консультацией относительно плана лечения, подкрепленной прайс-листами.
-                  И
-                  всё это бесплатно для меня! Я была потрясена!
-                </p>
-                <a href="#" class="card-link text-decoration-underline">National Medical Research Center named after V.
-                  A. Almazov</a>
-                <div class="location text-muted">Россия, Санкт-Петербург</div>
-                <div class="reviews row align-items-center">
-                  <div class="rating col-auto">
-                    <div class="row gx-1">
-                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="splide px-4" role="group"
+           data-splide='{"type":"loop","perPage":4, "easing": "ease","width": "100%", "padding": 0, "pagination": false, "breakpoints": { "500": { "perPage": 1 },"800": { "perPage": 2 },"1024": { "perPage": 3 }}}'
+           aria-label="Клиники">
+        <div class="splide__arrows">
+          <button class="bg-transparent ms-n3 splide__arrow splide__arrow--prev">
+            <img src="img/arrow-left.svg" alt="Назад">
+          </button>
+          <button class="bg-transparent me-n3 splide__arrow splide__arrow--next">
+            <img src="img/arrow-right.svg" alt="Вперед">
+          </button>
         </div>
-        <button class="carousel-control-prev ms-n4" type="button" data-bs-target="#carouselReviews"
-                data-bs-slide="prev">
-          <img src="img/arrow-left.svg" alt="Назад">
-          <span class="visually-hidden">Назад</span>
-        </button>
-        <button class="carousel-control-next me-n4" type="button" data-bs-target="#carouselReviews"
-                data-bs-slide="next">
-          <img src="img/arrow-right.svg" alt="Вперед">
-          <span class="visually-hidden">Вперед</span>
-        </button>
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide px-3 py-4">
+              <div class="card border-0 shadow">
+                <div class="card-body">
+                  <h3 class="card-title fw-bold">Ольга</h3>
+                  <p class="card-text">
+                    Услышала про фирму "МедикаТур" на канале РБК, на всякий случай сохранила информацию. И вот «всякий
+                    случай» настал. Я обратилась за онлайн-консультацией (Second opinion или мнение второго врача) и с
+                    просьбой подобрать для этой цели лучшую клинику.
+
+                    Мои документы с анализами и биопсией сразу разослали почти в десяток больниц по всему свету, которые
+                    тут
+                    же откликнулись предварительной консультацией относительно плана лечения, подкрепленной
+                    прайс-листами.
+                    И
+                    всё это бесплатно для меня! Я была потрясена!
+                  </p>
+                  <a href="#" class="card-link text-decoration-underline">National Medical Research Center named after
+                    V.A.Almazov</a>
+                  <div class="location text-muted">Россия, Санкт-Петербург</div>
+                  <div class="reviews row align-items-center">
+                    <div class="rating col-auto">
+                      <div class="row gx-1">
+                        <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                        <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                        <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                        <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                        <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide px-3 py-4">
+              <div class="card border-0 shadow">
+                <div class="card-body">
+                  <h3 class="card-title fw-bold">Ольга</h3>
+                  <p class="card-text">
+                    Услышала про фирму "МедикаТур" на канале РБК, на всякий случай сохранила информацию. И вот «всякий
+                    случай» настал. Я обратилась за онлайн-консультацией (Second opinion или мнение второго врача) и с
+                    просьбой подобрать для этой цели лучшую клинику.
+
+                    Мои документы с анализами и биопсией сразу разослали почти в десяток больниц по всему свету, которые
+                    тут
+                    же откликнулись предварительной консультацией относительно плана лечения, подкрепленной
+                    прайс-листами.
+                    И
+                    всё это бесплатно для меня! Я была потрясена!
+                  </p>
+                  <a href="#" class="card-link text-decoration-underline">National Medical Research Center named after
+                    V.A.Almazov</a>
+                  <div class="location text-muted">Россия, Санкт-Петербург</div>
+                  <div class="reviews row align-items-center">
+                    <div class="rating col-auto">
+                      <div class="row gx-1">
+                        <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                        <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                        <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                        <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                        <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide px-3 py-4">
+              <div class="card border-0 shadow">
+                <div class="card-body">
+                  <h3 class="card-title fw-bold">Ольга</h3>
+                  <p class="card-text">
+                    Услышала про фирму "МедикаТур" на канале РБК, на всякий случай сохранила информацию. И вот «всякий
+                    случай» настал. Я обратилась за онлайн-консультацией (Second opinion или мнение второго врача) и с
+                    просьбой подобрать для этой цели лучшую клинику.
+
+                    Мои документы с анализами и биопсией сразу разослали почти в десяток больниц по всему свету, которые
+                    тут
+                    же откликнулись предварительной консультацией относительно плана лечения, подкрепленной
+                    прайс-листами.
+                    И
+                    всё это бесплатно для меня! Я была потрясена!
+                  </p>
+                  <a href="#" class="card-link text-decoration-underline">National Medical Research Center named after
+                    V.A.Almazov</a>
+                  <div class="location text-muted">Россия, Санкт-Петербург</div>
+                  <div class="reviews row align-items-center">
+                    <div class="rating col-auto">
+                      <div class="row gx-1">
+                        <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                        <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                        <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                        <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                        <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   </div>
@@ -410,30 +501,44 @@
         <a class="link-dark" href="#">Отзывы</a>
       </li>
     </ul>
-    <div class="text-decoration-underline mb-3">
-      <a href="#">Политика конфиденциальности</a><br>
-      <a href="#">Условия пользования</a>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <p>
+          Офис: <a href="tel:+74997023393">+7 (499) 702-33-93</a><br>
+          Email: <a href="mailto:info@medica-tour.ru">info@medica-tour.ru</a>
+        </p>
+      </div>
+      <div class="col-12 col-md-auto ms-md-auto">
+        <ul class="nav mb-3">
+          <li class="nav-item"><a href="#"><img src="img/whatsapp.svg" alt="Мы в What's App"></a></li>
+          <li class="nav-item ms-1"><a href="#"><img src="img/viber.svg" alt="Мы в Viber"></a></li>
+          <li class="nav-item ms-1"><a href="#"><img src="img/telegram.svg" alt="Мы в Telegram"></a></li>
+          <li class="nav-item ms-1"><a href="#"><img src="img/facebook.svg" alt="Мы в Facebook"></a></li>
+          <li class="nav-item ms-1"><a href="#"><img src="img/instagram.svg" alt="Мы в Instagram"></a></li>
+          <li class="nav-item ms-1"><a href="#"><img src="img/ok.svg" alt="Мы в Одноклассниках"></a></li>
+          <li class="nav-item ms-1"><a href="#"><img src="img/youtube.svg" alt="Мы в Youtube"></a></li>
+          <li class="nav-item ms-1"><a href="#"><img src="img/twitter.svg" alt="Мы в Twitter"></a></li>
+        </ul>
+      </div>
     </div>
-    <div>
-      Офис: <a href="tel:+74997023393">+7 (499) 702-33-93</a><br>
-      Email: <a href="mailto:info@medica-tour.ru">info@medica-tour.ru</a>
-    </div>
-    <ul class="nav mb-3">
-      <li class="nav-item"><a href="#"><img src="img/whatsapp.svg" alt="Мы в What's App"></a></li>
-      <li class="nav-item ms-1"><a href="#"><img src="img/viber.svg" alt="Мы в Viber"></a></li>
-      <li class="nav-item ms-1"><a href="#"><img src="img/telegram.svg" alt="Мы в Telegram"></a></li>
-      <li class="nav-item ms-1"><a href="#"><img src="img/facebook.svg" alt="Мы в Facebook"></a></li>
-      <li class="nav-item ms-1"><a href="#"><img src="img/instagram.svg" alt="Мы в Instagram"></a></li>
-      <li class="nav-item ms-1"><a href="#"><img src="img/ok.svg" alt="Мы в Одноклассниках"></a></li>
-      <li class="nav-item ms-1"><a href="#"><img src="img/youtube.svg" alt="Мы в Youtube"></a></li>
-      <li class="nav-item ms-1"><a href="#"><img src="img/twitter.svg" alt="Мы в Twitter"></a></li>
-    </ul>
-    <div>
-      © 2012-2022 «МедикаТур»<br>
-      Все права защищены.
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <p class="text-decoration-underline mb-3 mb-md-0">
+          <a href="#">Политика конфиденциальности</a><br>
+          <a href="#">Условия пользования</a>
+        </p>
+      </div>
+      <div class="col-12 col-md-auto ms-md-auto text-md-end">
+        <p class="mb-0">
+          © 2012-2022 «МедикаТур»<br>
+          Все права защищены.
+        </p>
+      </div>
     </div>
   </div>
 </footer>
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/splide/dist/js/splide.min.js"></script>
+<script src="js/common.js"></script>
 </body>
 </html>
