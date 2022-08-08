@@ -4,8 +4,22 @@ const sourcemap = require('gulp-sourcemaps');
 const sass = require('gulp-sass')(require('sass'));
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
+const concat = require('gulp-concat');
+const uglify = require('gulp-uglify-es').default;
 const sync = require('browser-sync').create();
 
+const scripts = () => {
+  return gulp.src([
+    'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
+    'node_modules/@splidejs/splide/dist/js/splide.min.js',
+    'src/js/common.js'
+    ])
+    .pipe(concat('app.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('src/js'))
+    .pipe(sync.stream())
+}
+exports.scripts = scripts;
 
 const styles = () => {
   return gulp.src('src/sass/*.+(scss|sass)')
@@ -35,10 +49,11 @@ const server = (done) => {
 exports.server = server;
 
 const watcher = () => {
+  gulp.watch('src/js/common.js', gulp.series('scripts'));
   gulp.watch('src/sass/**/*.+(scss|sass)', gulp.series('styles'));
   gulp.watch('src/**/*.html').on('change', sync.reload);
 }
 
 exports.default = gulp.series(
-  styles, server, watcher
+  styles, scripts, server, watcher
 );

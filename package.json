@@ -20,6 +20,7 @@
     "autoprefixer": "^10.4.8",
     "browser-sync": "^2.27.10",
     "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
     "gulp-faker": "^1.0.1",
     "gulp-html": "^4.0.0",
     "gulp-livereload": "^4.0.2",
@@ -27,11 +28,15 @@
     "gulp-postcss": "^9.0.1",
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^3.0.0",
     "postcss": "^8.4.14",
+    "readable-stream": "^4.1.0",
     "sass": "^1.54.0"
   },
   "dependencies": {
     "@splidejs/splide": "^4.0.7",
-    "bootstrap": "^5.2.0"
+    "bootstrap": "^5.2.0",
+    "glightbox": "^3.2.0"
   }
 }
