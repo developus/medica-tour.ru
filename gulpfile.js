@@ -12,6 +12,7 @@ const scripts = () => {
   return gulp.src([
     'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
     'node_modules/@splidejs/splide/dist/js/splide.min.js',
+    'node_modules/glightbox/dist/js/glightbox.min.js',
     'src/js/common.js'
     ])
     .pipe(concat('app.min.js'))
