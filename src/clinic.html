@@ -108,8 +108,20 @@
     <div class="row row-cols-1 row-cols-lg-2 mb-3">
       <div class="col mb-3 mb-lg-0">
         <section class="card border-0 bg-white shadow h-100">
-          <img class="card-img-top" src="img/clinic-1600x900.png"
-               alt="National Medical Research Center named after V. A. Almazov">
+          <div class="splide rounded-top overflow-hidden" role="group"
+               data-splide='{"type":"loop","arrows": false,"perPage":1, "easing": "ease","width": "100%", "padding": 0, "pagination": false}'
+               aria-label="Клиники">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <a href="img/clinic-1600x900.png" data-glightbox><img class="card-img-top" src="img/clinic-1600x900.png" alt="National Medical Research Center named after V. A. Almazov"></a>
+                </li>
+                <li class="splide__slide">
+                  <a href="img/clinic-1600x900-2.png" data-glightbox><img class="card-img-top" src="img/clinic-1600x900-2.png" alt="National Medical Research Center named after V. A. Almazov"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
           <div class="p-3">
             <p>
               Санаторно-курортный комплекс Mriya Resort & SPA — место, где можно заняться своим здоровьем и отдохнуть
@@ -332,7 +344,7 @@
         помощью телекоммуникационных технологий.
       </p>
     </section>
-
+<!--
     <section class="card border-0 bg-white shadow p-3 mb-3">
       <h2 class="card-title">Фото</h2>
       <div class="row row-cols-2 row-cols-lg-3 row-cols-xl-6 g-3 mb-3">
@@ -398,7 +410,7 @@
         </div>
       </div>
     </section>
-
+-->
     <section class="card border-0 bg-white shadow p-3">
       <h2 class="card-title">Отзывы</h2>
       <div class="splide px-4" role="group"
