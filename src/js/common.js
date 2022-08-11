@@ -5,5 +5,6 @@ for ( var i = 0; i < splides.length; i++ ) {
 }
 
 const lightbox = GLightbox({
-  selector: 'data-glightbox'
+  selector: 'data-glightbox',
+  loop: true
 });
