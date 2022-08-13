@@ -114,14 +114,17 @@
           <form>
             <fieldset>
               <legend class="h2 text-center">Обратная связь</legend>
-              <div class="mb-3">
-                <input type="text" name="userName" id="userName" class="form-control" placeholder="Ваше имя">
+              <div class="form-floating mb-3">
+                <input type="text" name="userName" id="userName" class="form-control" placeholder="Александр">
+                <label for="userName">Ваше имя</label>
               </div>
-              <div class="mb-3">
-                <input type="email" name="userEmail" id="userEmail" class="form-control" placeholder="Ваш e-mail">
+              <div class="form-floating mb-3">
+                <input type="email" name="userEmail" id="userEmail" class="form-control" placeholder="name@example.com">
+                <label for="userEmail">Адрес электронной почты</label>
               </div>
-              <div class="mb-3">
-                <textarea name="userMessage" id="userMessage" rows="3" class="form-control" placeholder="Сообщение"></textarea>
+              <div class="form-floating mb-3">
+                <textarea name="userMessage" id="userMessage" rows="3" class="form-control" placeholder="Сообщение" style="height: 100px"></textarea>
+                <label for="userMessage">Сообщение</label>
               </div>
               <div class="d-grid">
                 <button type="submit" class="btn btn-primary">Отправить</button>
