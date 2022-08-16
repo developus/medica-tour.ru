@@ -8,3 +8,11 @@ const lightbox = GLightbox({
   selector: 'data-glightbox',
   loop: true
 });
+
+const headerHeight = document.querySelector('.sticky-header').offsetHeight + 15;
+
+const stickyHeader = new Sticky('.sticky-header');
+
+const stickyFilter = new Sticky('.sticky-filter', {
+  marginTop: headerHeight
+});

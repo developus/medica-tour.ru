@@ -2,6 +2,15 @@ a {
   text-decoration: none;
 }
 
+.sticky {
+  &-header {
+    z-index: 1000;
+  }
+  &-filter {
+    z-index: 999;
+  }
+}
+
 .navbar-toggler {
   border: 0;
 }

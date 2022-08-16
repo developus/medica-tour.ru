@@ -6,7 +6,7 @@
   <title>Medica-tour.ru</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-sticky-container>
 <header>
   <div class="bg-mt-dark text-white">
     <div class="container d-flex justify-content-between align-items-center">
@@ -34,7 +34,7 @@
       </ul>
     </div>
   </div>
-  <nav class="navbar navbar-expand-lg bg-white">
+  <nav class="navbar navbar-expand-lg bg-white sticky-header" data-sticky-wrap="true" data-sticky-class="shadow">
     <div class="container">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -249,9 +249,9 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row" data-sticky-container>
       <div class="d-none d-xl-block col-xl-3">
-        <aside class="card border-0 bg-white shadow">
+        <aside class="card border-0 bg-white shadow sticky-filter">
           <div class="card-body">
             <h2 class="card-title h3">Подобрать клинику</h2>
             <form>
