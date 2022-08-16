@@ -10,7 +10,6 @@ const lightbox = GLightbox({
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-  /*
   const headerHeight = document.querySelector('.sticky-header').offsetHeight;
 
   const StickyHeader = new hcSticky('.sticky-header', {
@@ -22,12 +21,11 @@ document.addEventListener('DOMContentLoaded', function() {
       document.querySelector('.sticky-header').classList.remove("shadow")
     }
   });
-  */
 
   const StickyFilter = new hcSticky('.sticky-filter', {
     stickTo: '.sticky-filter-container',
     followScroll: false,
-    top: 15
+    top: headerHeight + 15
   });
 
 });
