@@ -13,11 +13,11 @@ const scripts = () => {
     'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
     'node_modules/@splidejs/splide/dist/js/splide.min.js',
     'node_modules/glightbox/dist/js/glightbox.min.js',
-    'node_modules/sticky-js/dist/sticky.min.js',
+    'node_modules/hc-sticky/dist/hc-sticky.js',
     'src/js/common.js'
     ])
     .pipe(concat('app.min.js'))
-    .pipe(uglify())
+    //.pipe(uglify())
     .pipe(gulp.dest('src/js'))
     .pipe(sync.stream())
 }

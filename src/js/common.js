@@ -9,10 +9,24 @@ const lightbox = GLightbox({
   loop: true
 });
 
-const headerHeight = document.querySelector('.sticky-header').offsetHeight + 15;
+document.addEventListener('DOMContentLoaded', function() {
+  const headerHeight = document.querySelector('.sticky-header').offsetHeight;
+  const StickyHeader = new hcSticky('.sticky-header', {
+    stickTo: 'body',
+    onStart: function () {
+      document.querySelector('.sticky-header').classList.add("shadow")
+    },
+    onStop: function () {
+      document.querySelector('.sticky-header').classList.remove("shadow")
+    }
+  });
 
-const stickyHeader = new Sticky('.sticky-header');
+  StickyHeader.attach();
 
-const stickyFilter = new Sticky('.sticky-filter', {
-  marginTop: headerHeight
+  const StickyFilter = new hcSticky('.sticky-filter', {
+    stickTo: '.sticky-filter-container',
+    followScroll: false,
+    top: headerHeight + 15
+  });
+
 });
