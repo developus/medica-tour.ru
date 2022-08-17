@@ -27,7 +27,10 @@ document.addEventListener('DOMContentLoaded', function() {
   const StickyFilter = new hcSticky('.sticky-filter', {
     stickTo: '.sticky-filter-container',
     followScroll: false,
-    top: 15
+    top: 15,
+    bottom: 15
   });
+
+  Scrollbar.initAll();
 
 });

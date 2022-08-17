@@ -14,6 +14,7 @@ const scripts = () => {
     'node_modules/@splidejs/splide/dist/js/splide.min.js',
     'node_modules/glightbox/dist/js/glightbox.min.js',
     'node_modules/hc-sticky/dist/hc-sticky.js',
+    'node_modules/smooth-scrollbar/dist/smooth-scrollbar.js',
     'src/js/common.js'
     ])
     .pipe(concat('app.min.js'))

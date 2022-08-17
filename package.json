@@ -35,6 +35,7 @@
     "@splidejs/splide": "^4.0.7",
     "bootstrap": "^5.2.0",
     "glightbox": "^3.2.0",
-    "hc-sticky": "^2.2.7"
+    "hc-sticky": "^2.2.7",
+    "smooth-scrollbar": "^8.7.5"
   }
 }

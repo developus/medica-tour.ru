@@ -11935,6 +11935,18 @@ a {
   text-decoration: none;
 }
 
+.mvh-100 {
+  max-height: 100vh;
+}
+
+.scrollbar-track {
+  background: transparent !important;
+}
+
+.scrollbar-thumb {
+  background: #624E60 !important;
+}
+
 .sticky-header {
   z-index: 1000;
 }
