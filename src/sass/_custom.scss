@@ -28,7 +28,10 @@ a {
     transform: translate3d(0, -100%, 0);
   }
 }
-
+.sticky-filter {
+  transition: top 0.8s ease 0s;
+  top: 0;
+}
 .scroll-up {
   & .sticky-header {
     transform: none;
