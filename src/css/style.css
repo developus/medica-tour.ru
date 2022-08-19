@@ -11948,10 +11948,19 @@ a {
 }
 
 .sticky-header {
+  transition: transform 0.4s;
   z-index: 1000;
 }
 .sticky-filter {
   z-index: 999;
+}
+
+.scroll-down .sticky-header {
+  transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up .sticky-header {
+  transform: none;
 }
 
 .navbar-toggler {
