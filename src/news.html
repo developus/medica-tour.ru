@@ -63,7 +63,7 @@
       </div>
     </div>
   </nav>
-  <div class="search py-5"
+  <div class="search py-5 d-none d-lg-block"
        style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/city.jpg') no-repeat center; background-size: cover">
     <div class="container">
       <div class="input-group">
@@ -74,6 +74,39 @@
     </div>
   </div>
 </header>
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModallLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="container-fluid g-0">
+          <div class="row">
+            <div class="col-12">
+              <div class="btn-toolbar w-100">
+                <div class="input-group me-2">
+                  <button class="btn btn-primary" data-bs-dismiss="modal" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                      <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                    </svg>
+                  </button>
+                </div>
+                <div class="input-group col">
+                  <input type="search" class="form-control" placeholder="Заболевание, процедура, клиника, страна или город"
+                         aria-label="Поиск по сайту">
+                  <button class="btn btn-primary" type="button">Найти</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 p-5">
+              Вы можете искать по названию клиники, услуге, городу или стране
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <main class="bg-mt-light">
   <div class="container py-4">
     <section class="card border-0 bg-white shadow px-3 py-2 mb-3">
