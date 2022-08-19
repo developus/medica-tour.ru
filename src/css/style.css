@@ -12021,4 +12021,8 @@ a {
   height: 24px;
   background: url("../img/filter-icon.svg") no-repeat center center;
 }
+
+.map {
+  max-height: 360px;
+}
 /*# sourceMappingURL=style.css.map */
