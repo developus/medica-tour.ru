@@ -2,7 +2,7 @@
   "name": "medica-tour.ru",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -36,6 +36,7 @@
     "bootstrap": "^5.2.0",
     "glightbox": "^3.2.0",
     "hc-sticky": "^2.2.7",
-    "smooth-scrollbar": "^8.7.5"
+    "smooth-scrollbar": "^8.7.5",
+    "ymaps": "^0.2.1"
   }
 }
