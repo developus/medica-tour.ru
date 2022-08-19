@@ -125,7 +125,9 @@
                 <select name="filterCity" id="filterDirection" class="form-select">
                   <option selected>Выберите направление</option>
                   <option value="Аллергология">Аллергология</option>
-                  <option value="Алкоголизм, наркомания и другие зависимости">Алкоголизм, наркомания и другие зависимости</option>
+                  <option value="Алкоголизм, наркомания и другие зависимости">Алкоголизм, наркомания и другие
+                    зависимости
+                  </option>
                   <option value="Бариатрическая хирургия">Бариатрическая хирургия</option>
                   <option value="Гастроэнтерология">Гастроэнтерология</option>
                 </select>
@@ -254,147 +256,150 @@
         <aside class="card border-0 bg-white shadow sticky-filter">
           <div class="card-body mvh-100" data-scrollbar>
             <div class="h-100">
-            <h2 class="card-title h3">Подобрать клинику</h2>
-            <form>
-              <fieldset class="mb-3">
-                <label for="2filterCountry" class="form-label h4">Страна</label>
-                <select name="filterCountry" id="2filterCountry" class="form-select">
-                  <option selected>Выберите страну</option>
-                  <option value="Россия">Россия</option>
-                  <option value="Китай">Китай</option>
-                  <option value="Италия">Италия</option>
-                </select>
-              </fieldset>
-              <fieldset class="mb-3">
-                <label for="2filterCity" class="form-label h4">Город</label>
-                <select name="filterCity" id="2filterCity" class="form-select">
-                  <option selected>Выберите город</option>
-                  <option value="Москва">Москва</option>
-                  <option value="Санкт-Петербург">Санкт-Петербург</option>
-                  <option value="Казань">Казань</option>
-                  <option value="Владивосток">Владивосток</option>
-                </select>
-              </fieldset>
-              <fieldset class="mb-3">
-                <label for="2filterDirection" class="form-label h4">Направление лечения</label>
-                <select name="filterCity" id="2filterDirection" class="form-select">
-                  <option selected>Выберите направление</option>
-                  <option value="Аллергология">Аллергология</option>
-                  <option value="Алкоголизм, наркомания и другие зависимости">Алкоголизм, наркомания и другие зависимости</option>
-                  <option value="Бариатрическая хирургия">Бариатрическая хирургия</option>
-                  <option value="Гастроэнтерология">Гастроэнтерология</option>
-                </select>
-              </fieldset>
-              <fieldset class="mb-3">
-                <label for="2filterDiseaseSearch" class="form-label h4">Заболевание</label>
-                <input type="search" name="filterDirectionSearch" id="2filterDiseaseSearch" class="form-control mb-2"
-                       placeholder="Поиск">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="filterDisease" id="2filterDisease1"
-                         value="Гепатит С" checked>
-                  <label class="form-check-label" for="2filterDisease1">
-                    Гепатит С (5)
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="filterDisease" id="2filterDisease2"
-                         value="ДЦП">
-                  <label class="form-check-label" for="2filterDisease2">
-                    ДЦП (10)
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="filterDisease" id="2filterDisease3"
-                         value="Рак легкого">
-                  <label class="form-check-label" for="2filterDisease3">
-                    Рак легкого (15)
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="filterDisease" id="2filterDisease4"
-                         value="Рак желчного пузыря">
-                  <label class="form-check-label" for="2filterDisease4">
-                    Рак желчного пузыря (23)
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="filterDirection" id="2filterDisease5"
-                         value="Рак полости рта">
-                  <label class="form-check-label" for="2filterDisease5">
-                    Рак полости рта (123)
-                  </label>
-                </div>
-                <a class="link-primary">Посмотреть все</a>
-              </fieldset>
-              <fieldset class="mb-3">
-                <label for="2filterProceduresSearch" class="form-label h4">Процедуры</label>
-                <input type="search" name="filterDirectionSearch" id="2filterProceduresSearch" class="form-control mb-2"
-                       placeholder="Поиск">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="filterDirection" id="2filterProcedures1"
-                         value="ЭКО" checked>
-                  <label class="form-check-label" for="2filterProcedures1">
-                    ЭКО (31)
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="filterDirection" id="2filterProcedures2"
-                         value="Ринопластика">
-                  <label class="form-check-label" for="2filterProcedures2">
-                    Ринопластика (311)
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="filterDirection" id="2filterProcedures3"
-                         value="Прививки">
-                  <label class="form-check-label" for="2filterProcedures3">
-                    Прививки (5)
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="filterDirection" id="2filterProcedures4"
-                         value="Брекеты">
-                  <label class="form-check-label" for="2filterProcedures4">
-                    Брекеты (31)
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="filterDirection" id="2filterProcedures5"
-                         value="Массаж">
-                  <label class="form-check-label" for="2filterProcedures5">
-                    Массаж (331)
-                  </label>
-                </div>
-                <a class="link-primary">Посмотреть все</a>
-              </fieldset>
-              <fieldset class="mb-3">
-                <legend class="form-label h4">Дополнительно</legend>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="2filterExtras1">
-                  <label class="form-check-label" for="2filterExtras1">
-                    Wifi (31)
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="2filterExtras2" checked>
-                  <label class="form-check-label" for="2filterExtras2">
-                    Парковка (222)
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="2filterExtras3">
-                  <label class="form-check-label" for="2filterExtras3">
-                    Бассейн (333)
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="2filterExtras4">
-                  <label class="form-check-label" for="2filterExtras4">
-                    Завтраки (111)
-                  </label>
-                </div>
-              </fieldset>
-            </form>
+              <h2 class="card-title h3">Подобрать клинику</h2>
+              <form>
+                <fieldset class="mb-3">
+                  <label for="2filterCountry" class="form-label h4">Страна</label>
+                  <select name="filterCountry" id="2filterCountry" class="form-select">
+                    <option selected>Выберите страну</option>
+                    <option value="Россия">Россия</option>
+                    <option value="Китай">Китай</option>
+                    <option value="Италия">Италия</option>
+                  </select>
+                </fieldset>
+                <fieldset class="mb-3">
+                  <label for="2filterCity" class="form-label h4">Город</label>
+                  <select name="filterCity" id="2filterCity" class="form-select">
+                    <option selected>Выберите город</option>
+                    <option value="Москва">Москва</option>
+                    <option value="Санкт-Петербург">Санкт-Петербург</option>
+                    <option value="Казань">Казань</option>
+                    <option value="Владивосток">Владивосток</option>
+                  </select>
+                </fieldset>
+                <fieldset class="mb-3">
+                  <label for="2filterDirection" class="form-label h4">Направление лечения</label>
+                  <select name="filterCity" id="2filterDirection" class="form-select">
+                    <option selected>Выберите направление</option>
+                    <option value="Аллергология">Аллергология</option>
+                    <option value="Алкоголизм, наркомания и другие зависимости">Алкоголизм, наркомания и другие
+                      зависимости
+                    </option>
+                    <option value="Бариатрическая хирургия">Бариатрическая хирургия</option>
+                    <option value="Гастроэнтерология">Гастроэнтерология</option>
+                  </select>
+                </fieldset>
+                <fieldset class="mb-3">
+                  <label for="2filterDiseaseSearch" class="form-label h4">Заболевание</label>
+                  <input type="search" name="filterDirectionSearch" id="2filterDiseaseSearch" class="form-control mb-2"
+                         placeholder="Поиск">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="filterDisease" id="2filterDisease1"
+                           value="Гепатит С" checked>
+                    <label class="form-check-label" for="2filterDisease1">
+                      Гепатит С (5)
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="filterDisease" id="2filterDisease2"
+                           value="ДЦП">
+                    <label class="form-check-label" for="2filterDisease2">
+                      ДЦП (10)
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="filterDisease" id="2filterDisease3"
+                           value="Рак легкого">
+                    <label class="form-check-label" for="2filterDisease3">
+                      Рак легкого (15)
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="filterDisease" id="2filterDisease4"
+                           value="Рак желчного пузыря">
+                    <label class="form-check-label" for="2filterDisease4">
+                      Рак желчного пузыря (23)
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="filterDirection" id="2filterDisease5"
+                           value="Рак полости рта">
+                    <label class="form-check-label" for="2filterDisease5">
+                      Рак полости рта (123)
+                    </label>
+                  </div>
+                  <a class="link-primary">Посмотреть все</a>
+                </fieldset>
+                <fieldset class="mb-3">
+                  <label for="2filterProceduresSearch" class="form-label h4">Процедуры</label>
+                  <input type="search" name="filterDirectionSearch" id="2filterProceduresSearch"
+                         class="form-control mb-2"
+                         placeholder="Поиск">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="filterDirection" id="2filterProcedures1"
+                           value="ЭКО" checked>
+                    <label class="form-check-label" for="2filterProcedures1">
+                      ЭКО (31)
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="filterDirection" id="2filterProcedures2"
+                           value="Ринопластика">
+                    <label class="form-check-label" for="2filterProcedures2">
+                      Ринопластика (311)
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="filterDirection" id="2filterProcedures3"
+                           value="Прививки">
+                    <label class="form-check-label" for="2filterProcedures3">
+                      Прививки (5)
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="filterDirection" id="2filterProcedures4"
+                           value="Брекеты">
+                    <label class="form-check-label" for="2filterProcedures4">
+                      Брекеты (31)
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="filterDirection" id="2filterProcedures5"
+                           value="Массаж">
+                    <label class="form-check-label" for="2filterProcedures5">
+                      Массаж (331)
+                    </label>
+                  </div>
+                  <a class="link-primary">Посмотреть все</a>
+                </fieldset>
+                <fieldset class="mb-3">
+                  <legend class="form-label h4">Дополнительно</legend>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="2filterExtras1">
+                    <label class="form-check-label" for="2filterExtras1">
+                      Wifi (31)
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="2filterExtras2" checked>
+                    <label class="form-check-label" for="2filterExtras2">
+                      Парковка (222)
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="2filterExtras3">
+                    <label class="form-check-label" for="2filterExtras3">
+                      Бассейн (333)
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="2filterExtras4">
+                    <label class="form-check-label" for="2filterExtras4">
+                      Завтраки (111)
+                    </label>
+                  </div>
+                </fieldset>
+              </form>
             </div>
           </div>
         </aside>
@@ -404,20 +409,24 @@
           <div class="card-body">
             <div class="row align-items-center align-items-lg-start">
               <div class="col-12 col-lg-4">
-                <img src="img/clinic-1000x1000.png" alt="Клиника National Medical Research Center named after V.A.Almazov" class="card-img d-none d-lg-block">
-                <img src="img/clinic-1600x900.png" alt="Клиника National Medical Research Center named after V.A.Almazov" class="card-img d-lg-none">
-                <div class="reviews row align-items-center my-3">
-                  <div class="rating col-auto">
-                    <div class="row gx-1">
-                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                      <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
-                      <div class="col"><img src="img/star.svg" class="align-top" alt=""></div>
+                <a href="clinic.html"><img src="img/clinic-1000x1000.png"
+                                           alt="Клиника National Medical Research Center named after V.A.Almazov"
+                                           class="card-img d-none d-lg-block">
+                  <img src="img/clinic-1600x900.png"
+                       alt="Клиника National Medical Research Center named after V.A.Almazov"
+                       class="card-img d-lg-none"></a>
+                  <div class="reviews row align-items-center my-3">
+                    <div class="rating col-auto">
+                      <div class="row gx-1">
+                        <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                        <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                        <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                        <div class="col"><img src="img/star-active.svg" class="align-top" alt=""></div>
+                        <div class="col"><img src="img/star.svg" class="align-top" alt=""></div>
+                      </div>
                     </div>
+                    <div class="col comments text-black-50">10 отзывов</div>
                   </div>
-                  <div class="col comments text-black-50">10 отзывов</div>
-                </div>
               </div>
               <div class="col-12 col-lg-8">
                 <div class="location">Россия, Санкт-Петербург</div>
@@ -428,7 +437,8 @@
                 </h2>
 
                 <p>
-                  The V.A.Almazov National Medical Research Center is one of the leading medical institutions in the country
+                  The V.A.Almazov National Medical Research Center is one of the leading medical institutions in the
+                  country
                   providing specialized and high-tech medical care to the population.
                 </p>
 
@@ -443,7 +453,8 @@
 
                     Мои документы с анализами и биопсией сразу разослали почти в десяток больниц по всему свету, которые
                     тут
-                    же откликнулись предварительной консультацией относительно плана лечения, подкрепленной прайс-листами.
+                    же откликнулись предварительной консультацией относительно плана лечения, подкрепленной
+                    прайс-листами.
                     И
                     всё это бесплатно для меня! Я была потрясена!
                   </p>
@@ -467,8 +478,12 @@
           <div class="card-body">
             <div class="row align-items-center align-items-lg-start">
               <div class="col-12 col-lg-4">
-                <img src="img/clinic-1000x1000.png" alt="Клиника National Medical Research Center named after V.A.Almazov" class="card-img d-none d-lg-block">
-                <img src="img/clinic-1600x900.png" alt="Клиника National Medical Research Center named after V.A.Almazov" class="card-img d-lg-none">
+                <a href="clinic.html"><img src="img/clinic-1000x1000.png"
+                                           alt="Клиника National Medical Research Center named after V.A.Almazov"
+                                           class="card-img d-none d-lg-block">
+                  <img src="img/clinic-1600x900.png"
+                       alt="Клиника National Medical Research Center named after V.A.Almazov"
+                       class="card-img d-lg-none"></a>
                 <div class="reviews row align-items-center my-3">
                   <div class="rating col-auto">
                     <div class="row gx-1">
@@ -491,7 +506,8 @@
                 </h2>
 
                 <p>
-                  The V.A.Almazov National Medical Research Center is one of the leading medical institutions in the country
+                  The V.A.Almazov National Medical Research Center is one of the leading medical institutions in the
+                  country
                   providing specialized and high-tech medical care to the population.
                 </p>
 
@@ -506,7 +522,8 @@
 
                     Мои документы с анализами и биопсией сразу разослали почти в десяток больниц по всему свету, которые
                     тут
-                    же откликнулись предварительной консультацией относительно плана лечения, подкрепленной прайс-листами.
+                    же откликнулись предварительной консультацией относительно плана лечения, подкрепленной
+                    прайс-листами.
                     И
                     всё это бесплатно для меня! Я была потрясена!
                   </p>
@@ -530,8 +547,12 @@
           <div class="card-body">
             <div class="row align-items-center align-items-lg-start">
               <div class="col-12 col-lg-4">
-                <img src="img/clinic-1000x1000.png" alt="Клиника National Medical Research Center named after V.A.Almazov" class="card-img d-none d-lg-block">
-                <img src="img/clinic-1600x900.png" alt="Клиника National Medical Research Center named after V.A.Almazov" class="card-img d-lg-none">
+                <a href="clinic.html"><img src="img/clinic-1000x1000.png"
+                                           alt="Клиника National Medical Research Center named after V.A.Almazov"
+                                           class="card-img d-none d-lg-block">
+                  <img src="img/clinic-1600x900.png"
+                       alt="Клиника National Medical Research Center named after V.A.Almazov"
+                       class="card-img d-lg-none"></a>
                 <div class="reviews row align-items-center my-3">
                   <div class="rating col-auto">
                     <div class="row gx-1">
@@ -554,7 +575,8 @@
                 </h2>
 
                 <p>
-                  The V.A.Almazov National Medical Research Center is one of the leading medical institutions in the country
+                  The V.A.Almazov National Medical Research Center is one of the leading medical institutions in the
+                  country
                   providing specialized and high-tech medical care to the population.
                 </p>
 
@@ -569,7 +591,8 @@
 
                     Мои документы с анализами и биопсией сразу разослали почти в десяток больниц по всему свету, которые
                     тут
-                    же откликнулись предварительной консультацией относительно плана лечения, подкрепленной прайс-листами.
+                    же откликнулись предварительной консультацией относительно плана лечения, подкрепленной
+                    прайс-листами.
                     И
                     всё это бесплатно для меня! Я была потрясена!
                   </p>
@@ -593,8 +616,12 @@
           <div class="card-body">
             <div class="row align-items-center align-items-lg-start">
               <div class="col-12 col-lg-4">
-                <img src="img/clinic-1000x1000.png" alt="Клиника National Medical Research Center named after V.A.Almazov" class="card-img d-none d-lg-block">
-                <img src="img/clinic-1600x900.png" alt="Клиника National Medical Research Center named after V.A.Almazov" class="card-img d-lg-none">
+                <a href="clinic.html"><img src="img/clinic-1000x1000.png"
+                                           alt="Клиника National Medical Research Center named after V.A.Almazov"
+                                           class="card-img d-none d-lg-block">
+                  <img src="img/clinic-1600x900.png"
+                       alt="Клиника National Medical Research Center named after V.A.Almazov"
+                       class="card-img d-lg-none"></a>
                 <div class="reviews row align-items-center my-3">
                   <div class="rating col-auto">
                     <div class="row gx-1">
@@ -617,7 +644,8 @@
                 </h2>
 
                 <p>
-                  The V.A.Almazov National Medical Research Center is one of the leading medical institutions in the country
+                  The V.A.Almazov National Medical Research Center is one of the leading medical institutions in the
+                  country
                   providing specialized and high-tech medical care to the population.
                 </p>
 
@@ -632,7 +660,8 @@
 
                     Мои документы с анализами и биопсией сразу разослали почти в десяток больниц по всему свету, которые
                     тут
-                    же откликнулись предварительной консультацией относительно плана лечения, подкрепленной прайс-листами.
+                    же откликнулись предварительной консультацией относительно плана лечения, подкрепленной
+                    прайс-листами.
                     И
                     всё это бесплатно для меня! Я была потрясена!
                   </p>
@@ -656,8 +685,12 @@
           <div class="card-body">
             <div class="row align-items-center align-items-lg-start">
               <div class="col-12 col-lg-4">
-                <img src="img/clinic-1000x1000.png" alt="Клиника National Medical Research Center named after V.A.Almazov" class="card-img d-none d-lg-block">
-                <img src="img/clinic-1600x900.png" alt="Клиника National Medical Research Center named after V.A.Almazov" class="card-img d-lg-none">
+                <a href="clinic.html"><img src="img/clinic-1000x1000.png"
+                                           alt="Клиника National Medical Research Center named after V.A.Almazov"
+                                           class="card-img d-none d-lg-block">
+                  <img src="img/clinic-1600x900.png"
+                       alt="Клиника National Medical Research Center named after V.A.Almazov"
+                       class="card-img d-lg-none"></a>
                 <div class="reviews row align-items-center my-3">
                   <div class="rating col-auto">
                     <div class="row gx-1">
@@ -680,7 +713,8 @@
                 </h2>
 
                 <p>
-                  The V.A.Almazov National Medical Research Center is one of the leading medical institutions in the country
+                  The V.A.Almazov National Medical Research Center is one of the leading medical institutions in the
+                  country
                   providing specialized and high-tech medical care to the population.
                 </p>
 
@@ -695,7 +729,8 @@
 
                     Мои документы с анализами и биопсией сразу разослали почти в десяток больниц по всему свету, которые
                     тут
-                    же откликнулись предварительной консультацией относительно плана лечения, подкрепленной прайс-листами.
+                    же откликнулись предварительной консультацией относительно плана лечения, подкрепленной
+                    прайс-листами.
                     И
                     всё это бесплатно для меня! Я была потрясена!
                   </p>
