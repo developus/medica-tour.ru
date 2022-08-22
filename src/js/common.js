@@ -49,9 +49,11 @@ document.addEventListener('DOMContentLoaded', function() {
       // down
       body.classList.remove(scrollUp);
       body.classList.add(scrollDown);
-      StickyFilter.update({
-        top: 15
-      });
+      if (typeof StickyFilter == 'object' && document.getElementsByClassName( 'sticky-filter' ).length) {
+        StickyFilter.update({
+          top: 15
+        });
+      }
     } else if (
       currentScroll < lastScroll &&
       body.classList.contains(scrollDown)
@@ -59,9 +61,11 @@ document.addEventListener('DOMContentLoaded', function() {
       // up
       body.classList.remove(scrollDown);
       body.classList.add(scrollUp);
-      StickyFilter.update({
-        top: headerHeight + 15
-      });
+      if (typeof StickyFilter == 'object' && document.getElementsByClassName( 'sticky-filter' ).length) {
+        StickyFilter.update({
+          top: headerHeight + 15
+        });
+      }
     }
     lastScroll = currentScroll;
   });

@@ -11951,7 +11951,7 @@ a {
   max-height: calc(100vh - 30px);
 }
 .scroll-up .sticky .card-body {
-  max-height: calc(100vh - 89px);
+  max-height: calc(100vh - 104px);
 }
 .sticky-header {
   transition: transform 0.4s;
