@@ -11947,6 +11947,12 @@ a {
   background: #624E60 !important;
 }
 
+.sticky .card-body {
+  max-height: calc(100vh - 30px);
+}
+.scroll-up .sticky .card-body {
+  max-height: calc(100vh - 89px);
+}
 .sticky-header {
   transition: transform 0.4s;
   z-index: 1000;

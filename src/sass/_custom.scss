@@ -15,6 +15,12 @@ a {
 }
 
 .sticky {
+  & .card-body {
+    max-height: calc(100vh - 30px);
+  }
+  .scroll-up & .card-body {
+    max-height: calc(100vh - 89px);
+  }
   &-header {
     transition: transform 0.4s;
     z-index: 1000;
