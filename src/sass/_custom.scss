@@ -28,6 +28,10 @@ a {
   &-filter {
     top: 0;
     z-index: 999;
+    &:hover .scrollbar-track-y {
+      opacity: 1;
+      display: block!important;
+    }
   }
 }
 .scroll-down {
