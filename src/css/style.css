@@ -11955,7 +11955,7 @@ a {
 }
 .sticky-header {
   transition: transform 0.4s;
-  z-index: 1000;
+  z-index: 1050;
 }
 .sticky-filter {
   top: 0;
@@ -12026,9 +12026,5 @@ a {
   width: 24px;
   height: 24px;
   background: url("../img/filter-icon.svg") no-repeat center center;
-}
-
-.map {
-  max-height: 360px;
 }
 /*# sourceMappingURL=style.css.map */
