@@ -11961,10 +11961,6 @@ a {
   top: 0;
   z-index: 999;
 }
-.sticky-filter:hover .scrollbar-track-y {
-  opacity: 1;
-  display: block !important;
-}
 
 .scroll-down .sticky-header {
   transform: translate3d(0, -100%, 0);

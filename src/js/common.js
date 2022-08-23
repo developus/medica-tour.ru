@@ -31,9 +31,11 @@ document.addEventListener('DOMContentLoaded', function() {
     bottom: 15
   });
 
-  Scrollbar.initAll();
+  Scrollbar.initAll({
+    alwaysShowTracks: true
+  });
 
-  const body = document.body
+  const body = document.body;
   const scrollUp = "scroll-up";
   const scrollDown = "scroll-down";
   let lastScroll = 0;
