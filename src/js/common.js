@@ -11,7 +11,7 @@ const lightbox = GLightbox({
 
 document.addEventListener('DOMContentLoaded', function() {
 
-  const headerHeight = document.querySelector('.sticky-header').offsetHeight;
+//  const headerHeight = document.querySelector('.sticky-header').offsetHeight;
   const allHeaderHeight = document.querySelector('header').offsetHeight;
 
   const StickyHeader = new hcSticky('.sticky-header', {
@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
+/*
   const StickyFilter = new hcSticky('.sticky-filter', {
     stickTo: '.sticky-filter-container',
     followScroll: false,
@@ -38,8 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
       Scrollbar.update(true);
     }
   });
-
-
+*/
 
   const body = document.body;
   const scrollUp = "scroll-up";
@@ -57,22 +57,23 @@ document.addEventListener('DOMContentLoaded', function() {
       // down
       body.classList.remove(scrollUp);
       body.classList.add(scrollDown);
+/*
       if (typeof StickyFilter == 'object' && document.getElementsByClassName( 'sticky-filter' ).length) {
         StickyFilter.update({
           top: 15
         });
       }
-    } else if (
-      currentScroll < lastScroll &&
-      body.classList.contains(scrollDown)
-    ) {
+*/
+    } else if (currentScroll < lastScroll && body.classList.contains(scrollDown)) {
       // up
       body.classList.remove(scrollDown);
       body.classList.add(scrollUp);
       if (typeof StickyFilter == 'object' && document.getElementsByClassName( 'sticky-filter' ).length) {
+/*
         StickyFilter.update({
           top: headerHeight + 15
         });
+ */
       }
     }
     lastScroll = currentScroll;
